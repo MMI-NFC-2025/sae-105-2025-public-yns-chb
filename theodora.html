@@ -1,86 +1,103 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Théodora</title>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le festival</title>
+    <meta name="description"
+        content="Découvrez Théodora, la talentueuse chanteuse de rap/bouyon qui enflammera la scène 2 du Savou Fest le 12 juin 2026 à 16H. Plongez dans son univers audacieux et énergique à travers une performance inoubliable." />
+
     <link rel="icon" type="image/png" href="/assets/icons/Logo.svg" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/assets/icons/Logo.svg" />
     <link rel="shortcut icon" href="/assets/icons/Logo.svg" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
 </head>
+
 <body>
     <header>
-        <a href="assets/icons/Logo.svg">
+        <a href="/" aria-label="Accueil - Logo Savou Fest">
             <img src="assets/icons/Logo.svg" alt="Logo Savou Fest">
-    
+
         </a>
-        <a href="/assets/icons/Savou Fest.svg">
-            <img src="/assets/icons/Savou Fest.svg" alt="Texte Savou Fest">
+        <a href="/">
+            <img src="/assets/icons/Savou_Fest.svg" alt="Texte Savou Fest">
         </a>
-        <a href="/assets/icons/Menu (2).svg">
-            <img src="/assets/icons/Menu (2).svg" alt="Menu">
-        </a>
-    
+        <button aria-label="Menu de navigation">
+            <img src="/assets/icons/Menu.svg" alt="Menu">
+        </button>
+        <nav>
+            <ul>
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/le festival.html">Le festival</a></li>
+                <li><a href="/programme.html">Programme</a></li>
+                <li><a href="/artistes.html">Artistes</a></li>
+                <li><a href="/Scènes.html">Scènes</a></li>
+                <li><a href="/Infos_pratique.html">Info pratiques</a></li>
+                <li><a href="/Contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-       <h1>Théodora</h1>
+        <h1>Théodora</h1>
     </main>
 
-    <section>
-        <p>Le concert se déroulera le 12 juin 2026 à 16H sur la scène 2</p>
-        <a href="/assets/images/Scene2.jpg"></a>
-            <img src="/assets/images/Scene2.jpg" alt="Scène 2 du festival">
+    <section class="artist-detail">
+        <header class="artist-detail__header">
+            <h2 class="artist-detail__title">Boss Lady</h2>
+        </header>
+        <div class="artist-detail__content">
+            <p class="artist-detail__schedule">Le concert se déroulera le 12 juin 2026 à 16H sur la scène 2</p>
+            <a href="/assets/images/Scene2.jpg" class="artist-detail__stage-link"></a>
+            <img src="/assets/images/Scene2.jpg" alt="Scène 2 du festival" class="artist-detail__stage-image">
+            <p class="artist-detail__description">Chanteuse rap née en 2003, Théodora mêle rap, afro et bouyon avec des
+                textes audacieux sur l'identité noire
+                et
+                l'hyperféminité.​</p>
 
-        <p>Boss Lady</p>    
-        <p>Chanteuse rap née en 2003, Théodora mêle rap, afro et bouyon avec des textes audacieux sur l'identité noire et
-        l'hyperféminité.​</p>
-        
-        <p>Succès viral</p>
-        <p>Explosée via Kongolese sous BBL (certifié or) et Bad Boy Lovestory, Révélation Flammes 2025.</p>
-        
-        <p>Show électrisant</p>
-        <p>Énergie brute et dansante sur scène</p>
+            <h3 class="artist-detail__section-title">Succès viral</h3>
+            <p class="artist-detail__section-content">Explosée via Kongolese sous BBL (certifié or) et Bad Boy
+                Lovestory, Révélation Flammes 2025.</p>
+
+            <h3 class="artist-detail__section-title">Show électrisant</h3>
+            <p class="artist-detail__section-content">Énergie brute et dansante sur scène</p>
+        </div>
     </section>
 
-    <section>
-        <a href="/assets/images/Theodora1.jpg">
-            <img src="/assets/images/Theodora1.jpg" alt="Theodora assise par terre">
+    <section class="gallery">
+        <a href="/assets/images/Theodora1.jpg" class="gallery__item">
+            <img src="/assets/images/Theodora1.jpg" alt="Theodora assise par terre" class="gallery__image">
         </a>
 
-        <a href="/assets/images/Theodora2.jpg">
-            <img src="/assets/images/Theodora2.jpg" alt="Theodora de face">
+        <a href="/assets/images/Theodora2.jpg" class="gallery__item">
+            <img src="/assets/images/Theodora2.jpg" alt="Theodora de face" class="gallery__image">
         </a>
 
-        <a href="/assets/images/Theodora3.jpg">
-            <img src="/assets/images/Theodora3.jpg" alt="Theodora en performance">
+        <a href="/assets/images/Theodora3.jpg" class="gallery__item">
+            <img src="/assets/images/Theodora3.jpg" alt="Theodora en performance" class="gallery__image">
         </a>
 
-        <a href="/assets/images/Theodora4.jpg">
-            <img src="/assets/images/Theodora4.jpg" alt="Theodora en shooting photo">
+        <a href="/assets/images/Theodora4.jpg" class="gallery__item">
+            <img src="/assets/images/Theodora4.jpg" alt="Theodora en shooting photo" class="gallery__image">
         </a>
 
-        <a href="/assets/images/Theodora5.jpg">
-            <img src="/assets/images/Theodora5.jpg" alt="Theodora en performance">
+        <a href="/assets/images/Theodora5.jpg" class="gallery__item">
+            <img src="/assets/images/Theodora5.jpg" alt="Theodora en performance" class="gallery__image">
         </a>
 
-        <a href="/assets/images/Theodora6.jpg">
-            <img src="/assets/images/Theodora6.jpg" alt="Theodora en performance">
+        <a href="/assets/images/Theodora6.jpg" class="gallery__item">
+            <img src="/assets/images/Theodora6.jpg" alt="Theodora en performance" class="gallery__image">
         </a>
     </section>
-    
-    <Footer>
+
+    <footer>
         <a href="/assets/icons/Logo.svg">
             <img src="/assets/icons/Logo.svg" alt="Logo Savou Fest">
         </a>
-        <a href="/assets/icons/Savou Fest.svg">
-            <img src="/assets/icons/Savou Fest.svg" alt="Texte Savou Fest">
+        <a href="/assets/icons/Savou_Fest.svg">
+            <img src="/assets/icons/Savou_Fest.svg" alt="Texte Savou Fest">
         </a>
         <p>Navigation</p>
         <ul>
@@ -92,14 +109,14 @@
             <li>Contact</li>
         </ul>
         <p>Nos partenaires</p>
-        <a href="/assets/favicons/CA footer.svg">
-            <img src="/assets/favicons/CA footer.svg" alt="Logo Crédit Agricole">
+        <a href="/assets/favicons/CA_footer.svg">
+            <img src="/assets/favicons/CA_footer.svg" alt="Logo Crédit Agricole">
         </a>
-        <a href="/assets/favicons/CM footer.svg">
-            <img src="/assets/favicons/CM footer.svg" alt="Logo Crédit Mutuel">
+        <a href="/assets/favicons/CM_footer.svg">
+            <img src="/assets/favicons/CM_footer.svg" alt="Logo Crédit Mutuel">
         </a>
-        <a href="/assets/favicons/PMA  footer.svg">
-            <img src="/assets/favicons/PMA  footer.svg" alt="Logo PMA">
+        <a href="/assets/favicons/PMA_footer.svg">
+            <img src="/assets/favicons/PMA_footer.svg" alt="Logo PMA">
         </a>
         <p>Réseaux sociaux</p>
         <a href="/assets/favicons/Facebook.svg">
@@ -111,7 +128,8 @@
         <a href="/assets/favicons/Insta.svg">
             <img src="/assets/favicons/Insta.svg" alt="Logo Instagram">
         </a>
-    </Footer>
-    
+    </footer>
+
 </body>
+
 </html>

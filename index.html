@@ -1,28 +1,41 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page d'acceuil</title>
+    <meta name="description"
+        content="Bienvenue au SavouFest, le festival de musique incontournable de l'été ! Découvrez notre programme, nos artistes et toutes les informations pratiques pour profiter pleinement de cet événement unique. Rejoignez-nous les 12 et 13 juin 2026 pour deux jours de musique, de convivialité et de plaisir dans la basse vallée de la Sacoureuse." />
     <link rel="icon" type="image/png" href="/assets/icons/Logo.svg" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/assets/icons/Logo.svg" />
     <link rel="shortcut icon" href="/assets/icons/Logo.svg" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
 </head>
+
 <body>
     <header>
         <a href="assets/icons/Logo.svg">
             <img src="assets/icons/Logo.svg" alt="Logo Savou Fest">
 
         </a>
-        <a href="/assets/icons/Savou Fest.svg">
-            <img src="/assets/icons/Savou Fest.svg" alt="Texte Savou Fest">
+        <a href="/assets/icons/Savou_Fest.svg">
+            <img src="/assets/icons/Savou_Fest.svg" alt="Texte Savou Fest">
         </a>
-        <a href="/assets/icons/Menu (2).svg">
-            <img src="/assets/icons/Menu (2).svg" alt="Menu">
-        </a>
-
+        <button aria-label="Menu de navigation">
+            <img src="/assets/icons/Menu.svg" alt="Menu">
+        </button>
+        <nav>
+            <ul>
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/programme.html">Programme</a></li>
+                <li><a href="/artistes.html">Artistes</a></li>
+                <li><a href="/Scènes.html">Scènes</a></li>
+                <li><a href="/Infos_pratique.html">Info pratiques</a></li>
+                <li><a href="/Contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -34,73 +47,97 @@
     </main>
 
 
-    <section>
-        <h2>Programme</h2>
-        <a href="/assets/images/Drake.jpg">
-            <img src="/assets/images/Drake.jpg" alt="Drake en noir et blanc">
-        </a>
-        <p>Drake</p> 
-        </p>12 juin</p>
+    <section class="programme">
+        <header class="programme__header">
+            <h2 class="programme__title">Programme</h2>
+        </header>
+        <div class="programme__container">
+            <article class="programme__item">
+                <a href="/assets/images/Drake.jpg" class="programme__image-link">
+                    <img src="/assets/images/Drake.jpg" alt="Drake en noir et blanc" class="programme__image">
+                </a>
+                <h3 class="programme__artist">Drake</h3>
+                <p class="programme__date">12 juin</p>
+            </article>
 
-        <a href="/assets/images/Theodora.jpg">
-            <img src="/assets/images/Theodora.jpg" alt="Theodora de face">
-        </a>
-        <p>Théodora </p>
-        <p>12 juin</p>
+            <article class="programme__item">
+                <a href="/assets/images/Theodora.jpg" class="programme__image-link">
+                    <img src="/assets/images/Theodora.jpg" alt="Theodora de face" class="programme__image">
+                </a>
+                <h3 class="programme__artist">Théodora</h3>
+                <p class="programme__date">12 juin</p>
+            </article>
 
-        <a href="/assets/images/RemyBond.jpg">
-            <img src="/assets/images/RemyBond.jpg" alt="Rémy Bond en performance">
-        </a>
-        <p>Remy Bond</p> 
-        <p>13 juin</p>
+            <article class="programme__item">
+                <a href="/assets/images/RemyBond.jpg" class="programme__image-link">
+                    <img src="/assets/images/RemyBond.jpg" alt="Rémy Bond en performance" loading="lazy"
+                        class="programme__image">
+                </a>
+                <h3 class="programme__artist">Remy Bond</h3>
+                <p class="programme__date">13 juin</p>
+            </article>
 
-        <a href="/assets/images/Will.i.am.jpg">
-            <img src="/assets/images/Will.i.am.jpg" alt="Will.i.am en performance">
-        </a>
-        <p>Will.i.am</p>
-        <p>13 juin</p>
+            <article class="programme__item">
+                <a href="/assets/images/Will.i.am.jpg" class="programme__image-link">
+                    <img src="/assets/images/Will.i.am.jpg" alt="Will.i.am en performance" loading="lazy"
+                        class="programme__image">
+                </a>
+                <h3 class="programme__artist">Will.i.am</h3>
+                <p class="programme__date">13 juin</p>
+            </article>
+        </div>
 
     </section>
 
-    <section>
-        <h2>Billet</h2>
-        <ul>
-            <li>Passe 1 jour : 20€</li>
-            <li>Passe 2 jours : 35€</li>
+    <section class="ticketing">
+        <header class="ticketing__header">
+            <h2 class="ticketing__title">Billets</h2>
+        </header>
+        <ul class="ticketing__list">
+            <li class="ticketing__item">Passe 1 jour : 20€</li>
+            <li class="ticketing__item">Passe 2 jours : 35€</li>
         </ul>
-        <h2>Tarifs réduit</h2>
-        <ul>
-            <li>Étudiant : passe 1 jour 15€</li>
-            <li>passe 2 jour 25€</li>
-            <li>Enfants -12 ans gratuit</li>
+        <header class="ticketing__header">
+            <h2 class="ticketing__title">Tarifs réduits</h2>
+        </header>
+        <ul class="ticketing__list">
+            <li class="ticketing__item">Étudiant : passe 1 jour 15€</li>
+            <li class="ticketing__item">passe 2 jour 25€</li>
+            <li class="ticketing__item">Enfants -12 ans gratuit</li>
         </ul>
-        <h2>Billeterie</h2>
+        <header class="ticketing__header">
+            <h2 class="ticketing__title">Billeterie</h2>
+        </header>
     </section>
 
-    <section>
-        <h2>Accès & transport</h2>
-        <p>Train, navettes gratuites et covoiturage</p>
+    <section class="transport">
+        <header class="transport__header">
+            <h2 class="transport__title">Accès & transport</h2>
+        </header>
+        <p class="transport__description">Train, navettes gratuites et covoiturage</p>
     </section>
 
-    <section>
-        <h2>Nos partenaires</h2>
-        <a href="/assets/favicons/CA page principal.svg">
-            <img src="/assets/favicons/CA page principal.svg" alt="Logo Crédit Agricole">
+    <section class="partners">
+        <header class="partners__header">
+            <h2 class="partners__title">Nos partenaires</h2>
+        </header>
+        <a href="/assets/favicons/CA_page_principal.svg" class="partners__link">
+            <img src="/assets/favicons/CA_page_principal.svg" alt="Logo Crédit Agricole" class="partners__logo">
         </a>
-        <a href="/assets/favicons/CM page principal.svg">
-            <img src="/assets/favicons/CM page principal.svg" alt="Logo Crédit Mutuel">
+        <a href="/assets/favicons/CM_page_principal.svg" class="partners__link">
+            <img src="/assets/favicons/CM_page_principal.svg" alt="Logo Crédit Mutuel" class="partners__logo">
         </a>
-        <a href="/assets/favicons/PMA menu principal.svg">
-            <img src="/assets/favicons/PMA menu principal.svg" alt="Logo PMA">
+        <a href="/assets/favicons/PMA_menu_principal.svg" class="partners__link">
+            <img src="/assets/favicons/PMA_menu_principal.svg" alt="Logo PMA" class="partners__logo">
         </a>
     </section>
-    
-    <Footer>
+
+    <footer>
         <a href="/assets/icons/Logo.svg">
             <img src="/assets/icons/Logo.svg" alt="Logo Savou Fest">
         </a>
-        <a href="/assets/icons/Savou Fest.svg">
-            <img src="/assets/icons/Savou Fest.svg" alt="Texte Savou Fest">
+        <a href="/assets/icons/Savou_Fest.svg">
+            <img src="/assets/icons/Savou_Fest.svg" alt="Texte Savou Fest">
         </a>
         <p>Navigation</p>
         <ul>
@@ -112,14 +149,14 @@
             <li>Contact</li>
         </ul>
         <p>Nos partenaires</p>
-        <a href="/assets/favicons/CA footer.svg">
-            <img src="/assets/favicons/CA footer.svg" alt="Logo Crédit Agricole">
+        <a href="/assets/favicons/CA_footer.svg">
+            <img src="/assets/favicons/CA_footer.svg" alt="Logo Crédit Agricole">
         </a>
-        <a href="/assets/favicons/CM footer.svg">
-            <img src="/assets/favicons/CM footer.svg" alt="Logo Crédit Mutuel">
+        <a href="/assets/favicons/CM_footer.svg">
+            <img src="/assets/favicons/CM_footer.svg" alt="Logo Crédit Mutuel">
         </a>
-        <a href="/assets/favicons/PMA  footer.svg">
-            <img src="/assets/favicons/PMA  footer.svg" alt="Logo PMA">
+        <a href="/assets/favicons/PMA_footer.svg">
+            <img src="/assets/favicons/PMA_footer.svg" alt="Logo PMA">
         </a>
         <p>Réseaux sociaux</p>
         <a href="/assets/favicons/Facebook.svg">
@@ -131,8 +168,9 @@
         <a href="/assets/favicons/Insta.svg">
             <img src="/assets/favicons/Insta.svg" alt="Logo Instagram">
         </a>
-    </Footer>
+    </footer>
 
-    
+
 </body>
+
 </html>

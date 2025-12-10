@@ -1,142 +1,199 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Le festival</title>
+    <meta name="description"
+        content="Découvrez l'histoire, les objectifs et l'équipe passionnée derrière le Savou Fest, le festival de musique éco-responsable qui se tient chaque année dans la basse vallée de la Sacoureuse." />
     <link rel="icon" type="image/png" href="/assets/icons/Logo.svg" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/assets/icons/Logo.svg" />
     <link rel="shortcut icon" href="/assets/icons/Logo.svg" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
 </head>
+
 <body>
     <header>
-        <a href="assets/icons/Logo.svg">
+        <a href="/" aria-label="Accueil - Logo Savou Fest">
             <img src="assets/icons/Logo.svg" alt="Logo Savou Fest">
-    
+
         </a>
-        <a href="/assets/icons/Savou Fest.svg">
-            <img src="/assets/icons/Savou Fest.svg" alt="Texte Savou Fest">
+        <a href="/" aria-label="Accueil - Savou Fest">
+            <img src="/assets/icons/Savou_Fest.svg" alt="Texte Savou Fest">
         </a>
-        <a href="/assets/icons/Menu (2).svg">
-            <img src="/assets/icons/Menu (2).svg" alt="Menu">
-        </a>
-    
+        <button aria-label="Menu de navigation">
+            <img src="/assets/icons/Menu.svg" alt="Menu">
+        </button>
+        <nav>
+            <ul>
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/le festival.html">Le Festival</a></li>
+                <li><a href="/programme.html">Programme</a></li>
+                <li><a href="/artistes.html">Artistes</a></li>
+                <li><a href="/Scènes.html">Scènes</a></li>
+                <li><a href="/Infos_pratique.html">Info pratiques</a></li>
+                <li><a href="/Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
     </header>
+    <main>
+        <h1>Le Festival</h1>
+    </main>
 
-    <main> <h1>Le Festival</h1></main>
-
-    <section>
-        <h2>Présentation</h2>
-        <p>Créé en 2019 à la Réserve naturelle de la Basse vallée de la Savoureuse, notre festival propose une expérience musicale
-        unique qui respecte l'environnement et valorise les artistes engagés.</p>
+    <section class="presentation">
+        <header class="presentation__header">
+            <h2 class="presentation__title">Présentation</h2>
+        </header>
+        <p class="presentation__text">Créé en 2019 à la Réserve naturelle de la Basse vallée de la Savoureuse, notre
+            festival propose une
+            expérience musicale
+            unique qui respecte l'environnement et valorise les artistes engagés.</p>
         <br>
-        <p>Chaque année, pendant deux jours, le SavouFest rassemble des milliers de festivaliers autour de valeurs communes : le
-        respect de la nature, la découverte musicale et le partage.</p>
-    </section>
-    
-    <section>
-        <h2>Nos objectifs</h2>
-        <ul>
-            <li>-Proposer une programmation musicale éclectique et de qualité, mettant en avant des artistes engagés</li>
-            <li>-Démontrer qu'un événement culturel de grande envergure peut être 100% éco-responsable</li>
-            <li>-Créer du lien avec le territoire et soutenir l'économie locale</li>
-            <li>-Sensibiliser le public aux enjeux environnementaux à travers la culture</li>
-        </ul>
+        <p class="presentation__text">Chaque année, pendant deux jours, le SavouFest rassemble des milliers de
+            festivaliers autour de valeurs
+            communes : le
+            respect de la nature, la découverte musicale et le partage.</p>
     </section>
 
-    <section>
-        <h2>Notre parcours</h2> 
-        <ul>
-            <li>2019</li>
-            <li>Création du festival</li>
-            <li>Première édition avec 2 000 festivaliers et 8 artistes engagés. Le festival pose les bases de son modèle
-            éco-responsable.</li>
+    <section class="objectives">
+        <h2 class="objectives__title">Nos objectifs</h2>
+        <ul class="objectives__list">
+            <li class="objectives__item">-Proposer une programmation musicale éclectique et de qualité, mettant en avant
+                des artistes engagés
+            </li>
+            <li class="objectives__item">-Démontrer qu'un événement culturel de grande envergure peut être 100%
+                éco-responsable</li>
+            <li class="objectives__item">-Créer du lien avec le territoire et soutenir l'économie locale</li>
+            <li class="objectives__item">-Sensibiliser le public aux enjeux environnementaux à travers la culture</li>
         </ul>
-        
-        <ul>
-            <li>2021</li>
-            <li>Label Green Event</li>
-            <li>Obtention du label "Green Event" niveau 3, reconnaissance nationale de notre démarche éco-responsable. Doublement de la
-            fréquentation.</li>
-            </ul>
-
-        <ul>
-            <li>2023</li>
-            <li>Autonomie énergétique</li>
-            <li>100% autonome en énergie grâce à nos installations solaires et éoliennes. 7 000 festivaliers et 15 artistes
-            internationaux.</li>
-            </ul>
-
-        <ul>
-            <li>2024</li>
-            <li>Nouvelle édition</li>
-            <li>Programmation exceptionnelle et nouvelles initiatives pour réduire encore notre empreinte écologique. Objectif zéro
-            déchet.</li>
-            </ul>
-        
     </section>
 
-    <section>
-        <h2>L'équipe</h2>
-        <a href="/assets/images/Sophie durand.jpg">
-            <img src="/assets/images/Sophie durand.jpg" alt="Sophie Durand">
-        </a>
-        <ul>
-            <li>Sophie Durand</li>
-            <li>Directrice du festival</li>
-            <li>Pionnière de l'événementiel
-            éco-responsable depuis 15 ans</li>
+    <section class="timeline">
+        <header class="timeline__header">
+            <h2 class="timeline__title">Notre parcours</h2>
+        </header>
+        <ul class="timeline__list">
+            <li class="timeline__year">2019</li>
+            <li class="timeline__event">Création du festival</li>
+            <li class="timeline__description">Première édition avec 2 000 festivaliers et 8 artistes engagés. Le
+                festival pose les bases de son modèle
+                éco-responsable.</li>
         </ul>
 
-        <a href="/assets/images/Marc Lefebre.jpg">
-            <img src="/assets/images/Marc Lefebre.jpg" alt="Marc Lefebre">
-        </a>
-        <ul>
-            <li>Marc Lefebvre</li>
-            <li>Directeur technique</li>
-            <li>Expert en énergies renouvelables appliquées au spectacle vivant</li>
-        </ul>
-        <a href="/assets/images/Lea martin.jpg">
-            <img src="/assets/images/Lea martin.jpg" alt="Léa Martin">
-        </a>
-        <ul>
-            <li>Léa Martin</li>
-            <li>Responsable de programmation</li>
-            <li>Passionnée de musique et découvreuse de talents engagés</li>
-        </ul>
-        <a href="/assets/images/Thoma bernard.jpg">
-            <img src="/assets/images/Thoma bernard.jpg" alt="Thomas Bernard">
-        </a>
-        <ul>
-            <li>Thomas Bernard</li>
-            <li>Chargé de communication</li>
-            <li>Spécialiste de la sensibilisation environnementale par la culture</li>
+        <ul class="timeline__list">
+            <li class="timeline__year">2021</li>
+            <li class="timeline__event">Label Green Event</li>
+            <li class="timeline__description">Obtention du label "Green Event" niveau 3, reconnaissance nationale de
+                notre démarche éco-responsable.
+                Doublement de la
+                fréquentation.</li>
         </ul>
 
-        <h2>Nos Valeurs</h2>
-        <p>Éco-responsabilité</p>
-        <p>100% d'énergies renouvelables, compostage et recyclage intégral</p> <br>
+        <ul class="timeline__list">
+            <li class="timeline__year">2023</li>
+            <li class="timeline__event">Autonomie énergétique</li>
+            <li class="timeline__description">100% autonome en énergie grâce à nos installations solaires et éoliennes.
+                7 000 festivaliers et 15
+                artistes
+                internationaux.</li>
+        </ul>
 
-        <p>Inclusion</p>
-        <p>Un festival accessible à tous, valorisant la diversité culturelle</p> <br>
-
-        <p>Engagement local</p>
-        <p>Partenariats avec producteurs locaux et acteurs du territoire</p> <br>
-
-        <p>Excellence artistique</p>
-        <p>Une programmation exigeante mêlant têtes d'affiche et nouveaux talents</p>
+        <ul class="timeline__list">
+            <li class="timeline__year">2024</li>
+            <li class="timeline__event">Nouvelle édition</li>
+            <li class="timeline__description">Programmation exceptionnelle et nouvelles initiatives pour réduire encore
+                notre empreinte écologique.
+                Objectif zéro
+                déchet.</li>
+        </ul>
 
     </section>
 
+    <section class="team">
+        <header class="team__header">
+            <h2 class="team__title">L'équipe</h2>
+        </header>
+        <div class="team__container">
+            <article class="team__member">
+                <a href="/assets/images/Sophie durand.jpg" class="team__image-link">
+                    <img src="/assets/images/Sophie durand.jpg" alt="Femme blonde souriante" loading="lazy"
+                        class="team__image">
+                </a>
+                <h3 class="team__name">Sophie Durand</h3>
+                <p class="team__role">Directrice du festival</p>
+                <p class="team__bio">Pionnière de l'événementiel éco-responsable depuis 15 ans</p>
+            </article>
 
-    <Footer>
-        <a href="/assets/icons/Logo.svg">
+            <article class="team__member">
+                <a href="/assets/images/Marc Lefebre.jpg" class="team__image-link">
+                    <img src="/assets/images/Marc Lefebre.jpg" alt="Homme chauve avec une barbe" loading="lazy"
+                        class="team__image">
+                </a>
+                <h3 class="team__name">Marc Lefebvre</h3>
+                <p class="team__role">Directeur technique</p>
+                <p class="team__bio">Expert en énergies renouvelables appliquées au spectacle vivant</p>
+            </article>
+
+            <article class="team__member">
+                <a href="/assets/images/Lea martin.jpg" class="team__image-link">
+                    <img src="/assets/images/Lea martin.jpg" alt="Femme brune souriante" loading="lazy"
+                        class="team__image">
+                </a>
+                <h3 class="team__name">Léa Martin</h3>
+                <p class="team__role">Responsable de programmation</p>
+                <p class="team__bio">Passionnée de musique et découvreuse de talents engagés</p>
+            </article>
+
+            <article class="team__member">
+                <a href="/assets/images/Thoma bernard.jpg" class="team__image-link">
+                    <img src="/assets/images/Thoma bernard.jpg" alt="Homme roux souriant" loading="lazy"
+                        class="team__image">
+                </a>
+                <h3 class="team__name">Thomas Bernard</h3>
+                <p class="team__role">Chargé de communication</p>
+                <p class="team__bio">Spécialiste de la sensibilisation environnementale par la culture</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="values">
+        <header class="values__header">
+            <h2 class="values__title">Nos Valeurs</h2>
+        </header>
+        <div class="values__container">
+            <article class="values__item">
+                <h3 class="values__name">Éco-responsabilité</h3>
+                <p class="values__description">100% d'énergies renouvelables, compostage et recyclage intégral</p>
+            </article>
+
+            <article class="values__item">
+                <h3 class="values__name">Inclusion</h3>
+                <p class="values__description">Un festival accessible à tous, valorisant la diversité culturelle</p>
+            </article>
+
+            <article class="values__item">
+                <h3 class="values__name">Engagement local</h3>
+                <p class="values__description">Partenariats avec producteurs locaux et acteurs du territoire</p>
+            </article>
+
+            <article class="values__item">
+                <h3 class="values__name">Excellence artistique</h3>
+                <p class="values__description">Une programmation exigeante mêlant têtes d'affiche et nouveaux talents
+                </p>
+            </article>
+        </div>
+    </section>
+
+
+    <footer>
+        <a href="/" aria-label="Accueil - Logo Savou Fest">
             <img src="/assets/icons/Logo.svg" alt="Logo Savou Fest">
         </a>
-        <a href="/assets/icons/Savou Fest.svg">
-            <img src="/assets/icons/Savou Fest.svg" alt="Texte Savou Fest">
+        <a href="/" aria-label="Accueil - Savou Fest">
+            <img src="/assets/icons/Savou_Fest.svg" alt="Texte Savou Fest">
         </a>
         <p>Navigation</p>
         <ul>
@@ -148,14 +205,14 @@
             <li>Contact</li>
         </ul>
         <p>Nos partenaires</p>
-        <a href="/assets/favicons/CA footer.svg">
-            <img src="/assets/favicons/CA footer.svg" alt="Logo Crédit Agricole">
+        <a href="/assets/favicons/CA_footer.svg">
+            <img src="/assets/favicons/CA_footer.svg" alt="Logo Crédit Agricole">
         </a>
-        <a href="/assets/favicons/CM footer.svg">
-            <img src="/assets/favicons/CM footer.svg" alt="Logo Crédit Mutuel">
+        <a href="/assets/favicons/CM_footer.svg">
+            <img src="/assets/favicons/CM_footer.svg" alt="Logo Crédit Mutuel">
         </a>
-        <a href="/assets/favicons/PMA  footer.svg">
-            <img src="/assets/favicons/PMA  footer.svg" alt="Logo PMA">
+        <a href="/assets/favicons/PMA_footer.svg">
+            <img src="/assets/favicons/PMA_footer.svg" alt="Logo PMA">
         </a>
         <p>Réseaux sociaux</p>
         <a href="/assets/favicons/Facebook.svg">
@@ -167,7 +224,8 @@
         <a href="/assets/favicons/Insta.svg">
             <img src="/assets/favicons/Insta.svg" alt="Logo Instagram">
         </a>
-    </Footer>
+    </footer>
 
 </body>
+
 </html>

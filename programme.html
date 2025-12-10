@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programme</title>
+    <meta name="description"
+        content="Découvrez le programme complet du Savou Fest 2026 avec les horaires et scènes des performances de Théodora, Drake, Remy Bond et Will.i.am les 12 et 13 juin." />
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le festival</title>
+
     <link rel="icon" type="image/png" href="/assets/icons/Logo.svg" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/assets/icons/Logo.svg" />
     <link rel="shortcut icon" href="/assets/icons/Logo.svg" />
@@ -17,67 +18,96 @@
 
 <body>
     <header>
-        <a href="assets/icons/Logo.svg">
+        <a href="/">
             <img src="assets/icons/Logo.svg" alt="Logo Savou Fest">
-    
         </a>
-        <a href="/assets/icons/Savou Fest.svg">
-            <img src="/assets/icons/Savou Fest.svg" alt="Texte Savou Fest">
+        <a href="/">
+            <img src="/assets/icons/Savou_Fest.svg" alt="Texte Savou Fest">
         </a>
-        <a href="/assets/icons/Menu (2).svg">
-            <img src="/assets/icons/Menu (2).svg" alt="Menu">
-        </a>
-    
+        <button aria-label="Menu de navigation">
+            <img src="/assets/icons/Menu.svg" alt="Menu">
+        </button>
+        <nav>
+            <ul>
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/le festival.html">Le festival</a></li>
+                <li><a href="/programme.html">Programme</a></li>
+                <li><a href="/artistes.html">Artistes</a></li>
+                <li><a href="/Scènes.html">Scènes</a></li>
+                <li><a href="/Infos_pratique.html">Info pratiques</a></li>
+                <li><a href="/Contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
         <h1>Programme</h1>
     </main>
 
-    <section>
-        <a href="/assets/images/Theodora.jpg">
-            <img src="/assets/images/Theodora.jpg" alt="Theodora de face">
-        </a>
-        <h2>Théodora</h2>
-        <p>Rap/Bouyon</p>
-        <p>Rendez-vous le 12 juin 2026 à 16h sur la scène 2</p>
+    <section class="artist artist--theodora">
+        <header class="artist__header">
+            <h2 class="artist__title">Théodora</h2>
+        </header>
+        <div class="artist__content">
+            <a href="/assets/images/Theodora.jpg" class="artist__image-link">
+                <img src="/assets/images/Theodora.jpg" alt="Theodora de face" class="artist__image">
+            </a>
+            <p class="artist__genre">Rap/Bouyon</p>
+            <p class="artist__schedule">Rendez-vous le 12 juin 2026 à 16h sur la scène 2</p>
+        </div>
     </section>
 
-    <section>
-        <a href="/assets/images/Drake.jpg">
-            <img src="/assets/images/Drake.jpg" alt="Drake en noir et blanc">
-        </a>
-        <h2>Drake</h2>
-        <p>Rap/R&B</p>
-        <p>Rendez-vous le 12 juin 2026 à 19H sur la scène 1</p>
+    <section class="artist artist--drake">
+        <header class="artist__header">
+            <h2 class="artist__title">Drake</h2>
+        </header>
+        <div class="artist__content">
+            <a href="/assets/images/Drake.jpg" class="artist__image-link">
+                <img src="/assets/images/Drake.jpg" alt="Drake en noir et blanc" class="artist__image">
+            </a>
+            <p class="artist__genre">Rap/R&B</p>
+            <p class="artist__schedule">Rendez-vous le 12 juin 2026 à 19H sur la scène 1</p>
+        </div>
     </section>
 
-    <section>
-        <a href="/assets/images/RemyBond.jpg">
-            <img src="/assets/images/RemyBond.jpg" alt="Rémy Bond en performance">
-        </a>
-        <h2>Remy Bond</h2>
-        <p>Alternatif</p>
-        <p>Rendez-vous le 13 juin 2026 à 19H sur la scène 2</p>
+    <section class="artist artist--remybond">
+        <header class="artist__header">
+            <h2 class="artist__title">Remy Bond</h2>
+        </header>
+        <div class="artist__content">
+            <a href="/assets/images/RemyBond.jpg" class="artist__image-link">
+                <img src="/assets/images/RemyBond.jpg" alt="Rémy Bond en performance" loading="lazy"
+                    class="artist__image">
+            </a>
+            <p class="artist__genre">Alternatif</p>
+            <p class="artist__schedule">Rendez-vous le 13 juin 2026 à 19H sur la scène 2</p>
+        </div>
     </section>
 
-    <section>
-        <a href="/assets/images/Will.i.am.jpg">
-            <img src="/assets/images/Will.i.am.jpg" alt="Will.i.am en performance">
-        </a>
-        <h2>Will.i.am</h2>
-        <p>Pop/Electro</p>
-        <p>Rendez-vous le 13 juin 2026 à 21H sur la scène 1</p>
+    <section class="artist artist--william">
+        <header class="artist__header">
+            <h2 class="artist__title">Will.i.am</h2>
+        </header>
+        <div class="artist__content">
+            <a href="/assets/images/Will.i.am.jpg" class="artist__image-link">
+                <img src="/assets/images/Will.i.am.jpg" alt="Will.i.am en performance" loading="lazy"
+                    class="artist__image">
+            </a>
+            <p class="artist__genre">Pop/Electro</p>
+            <p class="artist__schedule">Rendez-vous le 13 juin 2026 à 21H sur la scène 1</p>
+        </div>
     </section>
 
-    <section>   
-        <p>Télécharger le programme</p>
-        <a href="/assets/favicons/Télécharger PDF.svg">
-            <img src="/assets/favicons/Télécharger PDF.svg" alt="Icône Télécharger PDF">
+    <section class="download">
+        <header class="download__header">
+            <h2 class="download__title">Télécharger le programme</h2>
+        </header>
+        <a href="/assets/favicons/Télécharger_PDF.svg" class="download__link">
+            <img src="/assets/favicons/Télécharger_PDF.svg" alt="Icône Télécharger PDF" class="download__icon">
         </a>
     </section>
-    
-    <Footer>
+
+    <footer>
         <a href="/assets/icons/Logo.svg">
             <img src="/assets/icons/Logo.svg" alt="Logo Savou Fest">
         </a>
@@ -114,6 +144,7 @@
             <img src="/assets/favicons/Insta.svg" alt="Logo Instagram">
         </a>
     </Footer>
-    
+
 </body>
+
 </html>
