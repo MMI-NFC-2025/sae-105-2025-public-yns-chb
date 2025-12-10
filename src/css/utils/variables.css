@@ -1,0 +1,40 @@
+/* Couleur */
+:root {
+    /* Mode 1 */
+    /* color */
+    --bleu: #4b9bb2;
+    --noir: #000000;
+    --blanc: #ffffff;
+    --vert: #557e54;
+}
+
+/* Typographie */
+:root {
+    /* Mode 1 */
+    /* number */
+    --texte-4: 1rem;
+    --texte-3: 1.25rem;
+    --texte-2: 1.5rem;
+    --h3: 1.75rem;
+    --texte-1: 1.75rem;
+    --h2: 2rem;
+    --h1: 4rem;
+
+    
+    /* string */
+    --roboto: roboto;
+    --sans: original surfer;
+}
+
+/* espace */
+:root {
+    /* Mode 1 */
+    /* number */
+    --texte-4: 0.75rem;
+    --texte-3: 1rem;
+    --texte-2: 1.25rem;
+    --texte-1: 1.75rem;
+    --h3: 2rem;
+    --h2: 2.5rem;
+    --h1: 3.25rem;
+}
