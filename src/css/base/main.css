@@ -1,0 +1,114 @@
+/* Change le modèle de boite par défaut */
+* {
+    box-sizing: border-box;
+}
+
+/* Scroll fluide pour les ancres */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Sélection de texte personnalisée */
+::selection {
+    background-color: var(--toniqueLight);
+}
+
+body {
+    font-family: var(--roboto);
+    font-size: var(--text-base);
+    line-height: 1.4;
+    letter-spacing: -0.03rem;
+    background-color: var(--blanc);
+    color: var(--noir);
+
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--sans);
+}
+
+h1 {
+    font-size: var(--h1);
+    line-height: 1.1;
+    color: var(--vert);
+}
+
+h2 {
+    font-size: var(--h2);
+    line-height: 1.2;
+    color: var(--noir);
+}
+
+h3 {
+    font-size: var(--h3);
+    line-height: 1.3;
+    color: var(--bleu);
+}
+
+button,
+input,
+select,
+textarea {
+    appearance: none;
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* --- CLASSES UTILITAIRES --- */
+
+/* Enlève l'apparence par défaut des listes */
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Pour rendre invisible mais laisser accessible */
+.u-sr-only {
+    position: absolute !important;
+    inline-size: 1px;
+    /* width logique */
+    block-size: 1px;
+    /* height logique */
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    /* évite le retour à la ligne */
+    border: 0;
+
+    /* Masquage moderne + fallback */
+    clip-path: inset(50%);
+}
+
+.u-noscroll {
+    overflow: hidden;
+}
+
+.u-highlight {
+    color: var(--tonique-light);
+}
+
+.u-intro {
+    font-size: var(--text-2xl);
+    color: var(--dark);
+    font-weight: 600;
+}
+
+.u-grid-col-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-2xl);
+}

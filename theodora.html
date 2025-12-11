@@ -13,29 +13,39 @@
     <link rel="shortcut icon" href="/assets/icons/Logo.svg" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <script type="module" src="/src/js/script.js"></script>
 </head>
 
 <body>
-    <header>
-        <a href="/" aria-label="Accueil - Logo Savou Fest">
-            <img src="assets/icons/Logo.svg" alt="Logo Savou Fest">
-
+    <header class="header">
+        <a href="/" class="header__link">
+            <img src="assets/icons/Logo.svg" alt="Logo Savou Fest" class="header__logo">
         </a>
-        <a href="/">
+        <a href="/" class="header__link">
             <img src="/assets/icons/Savou_Fest.svg" alt="Texte Savou Fest">
         </a>
-        <button aria-label="Menu de navigation">
+        <button class="menu-btn" aria-label="Menu de navigation" aria-expanded="false">
             <img src="/assets/icons/Menu.svg" alt="Menu">
         </button>
-        <nav>
-            <ul>
-                <li><a href="/">Accueil</a></li>
-                <li><a href="/le_festival.html">Le festival</a></li>
-                <li><a href="/programme.html">Programme</a></li>
-                <li><a href="/artistes.html">Artistes</a></li>
-                <li><a href="/Scènes.html">Scènes</a></li>
-                <li><a href="/Infos_pratique.html">Info pratiques</a></li>
-                <li><a href="/Contact.html">Contact</a></li>
+        <nav class="menu" hidden>
+            <ul class="menu__list">
+                <li class="menu__item"><a href="/" class="menu__link">Accueil</a></li>
+                <li class="menu__item"><a href="/le_festival.html" class="menu__link">Le Festival</a></li>
+                <li class="menu__item"><a href="/programme.html" class="menu__link">Programme</a></li>
+                <li class="menu__item"><a href="/artistes.html" class="menu__link">Artistes</a></li>
+                <li class="menu__item"><a href="/Scènes.html" class="menu__link">Scènes</a></li>
+                <li class="menu__item"><a href="/Infos_pratique.html" class="menu__link">Info pratiques</a></li>
+                <li class="menu__item"><a href="/Contact.html" class="menu__link">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -96,41 +106,53 @@
     </section>
 
     <footer>
-        <a href="/assets/icons/Logo.svg">
-            <img src="/assets/icons/Logo.svg" alt="Logo Savou Fest">
-        </a>
-        <a href="/assets/icons/Savou_Fest.svg">
-            <img src="/assets/icons/Savou_Fest.svg" alt="Texte Savou Fest">
-        </a>
-        <p>Navigation</p>
-        <ul>
-            <li>Le festival</li>
-            <li>Programme</li>
-            <li>Artistes</li>
-            <li>Scènes</li>
-            <li>Info pratiques</li>
-            <li>Contact</li>
-        </ul>
-        <p>Nos partenaires</p>
-        <a href="/assets/favicons/CA_footer.svg">
-            <img src="/assets/favicons/CA_footer.svg" alt="Logo Crédit Agricole">
-        </a>
-        <a href="/assets/favicons/CM_footer.svg">
-            <img src="/assets/favicons/CM_footer.svg" alt="Logo Crédit Mutuel">
-        </a>
-        <a href="/assets/favicons/PMA_footer.svg">
-            <img src="/assets/favicons/PMA_footer.svg" alt="Logo PMA">
-        </a>
-        <p>Réseaux sociaux</p>
-        <a href="/assets/favicons/Facebook.svg">
-            <img src="/assets/favicons/Facebook.svg" alt="Logo Facebook">
-        </a>
-        <a href="/assets/favicons/TikTok.svg">
-            <img src="/assets/favicons/TikTok.svg" alt="Logo TikTok">
-        </a>
-        <a href="/assets/favicons/Insta.svg">
-            <img src="/assets/favicons/Insta.svg" alt="Logo Instagram">
-        </a>
+        <div class="footer__logo-section">
+            <img src="/assets/icons/Logo.svg" alt="Logo Savou Fest" class="footer__logo">
+            <h3 class="footer__logo-text">Savou Fest</h3>
+        </div>
+
+        <nav class="footer__section">
+            <h3 class="footer__title">Navigation</h3>
+            <ul class="footer__nav-list">
+                <li><a href="/" class="footer__link">Accueil</a></li>
+                <li><a href="/le_festival.html" class="footer__link">Le Festival</a></li>
+                <li><a href="/programme.html" class="footer__link">Programme</a></li>
+                <li><a href="/artistes.html" class="footer__link">Artistes</a></li>
+                <li><a href="/Scènes.html" class="footer__link">Scènes</a></li>
+                <li><a href="/Infos_pratique.html" class="footer__link">Info pratiques</a></li>
+                <li><a href="/Contact.html" class="footer__link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section class="footer__section">
+            <h3 class="footer__title">Nos partenaires</h3>
+            <div class="footer__partners">
+                <a href="#" class="footer__partner-link">
+                    <img src="/assets/favicons/CA_footer.svg" alt="Logo Crédit Agricole" class="footer__partner-logo">
+                </a>
+                <a href="#" class="footer__partner-link">
+                    <img src="/assets/favicons/CM_footer.svg" alt="Logo Crédit Mutuel" class="footer__partner-logo">
+                </a>
+                <a href="#" class="footer__partner-link">
+                    <img src="/assets/favicons/PMA_footer.svg" alt="Logo PMA" class="footer__partner-logo">
+                </a>
+            </div>
+        </section>
+
+        <section class="footer__section">
+            <h3 class="footer__title">Réseaux sociaux</h3>
+            <ul class="footer__social-list">
+                <li><a href="#" class="footer__social-link" aria-label="Facebook">
+                        <img src="/assets/favicons/Facebook.svg" alt="Facebook">
+                    </a></li>
+                <li><a href="#" class="footer__social-link" aria-label="TikTok">
+                        <img src="/assets/favicons/TikTok.svg" alt="TikTok">
+                    </a></li>
+                <li><a href="#" class="footer__social-link" aria-label="Instagram">
+                        <img src="/assets/favicons/Insta.svg" alt="Instagram">
+                    </a></li>
+            </ul>
+        </section>
     </footer>
 
 </body>

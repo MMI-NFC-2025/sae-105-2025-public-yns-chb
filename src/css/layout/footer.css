@@ -1,0 +1,123 @@
+/* Footer */
+footer {
+    background-color: var(--vert);
+    color: var(--blanc);
+    padding: var(--space-5xl) var(--space-4xl);
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-5xl);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer__section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2xl);
+}
+
+.footer__title {
+    font-size: var(--tex);
+    color: var(--blanc);
+    margin: 0;
+    padding-bottom: var(--space-lg);
+    border-bottom: 2px solid var(--blanc);
+}
+
+.footer__nav-list,
+.footer__social-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.footer__link {
+    color: var(--blanc);
+    text-decoration: none;
+    font-size: var(--text-base);
+    transition: opacity 0.2s ease;
+}
+
+.footer__link:hover {
+    opacity: 0.8;
+}
+
+.footer__social-list {
+    flex-direction: row;
+    gap: var(--space-lg);
+}
+
+.footer__social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: var(--space-md);
+    transition: background-color 0.2s ease;
+}
+
+.footer__social-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.footer__social-link img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.footer__logo-section {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding-bottom: var(--space-2xl);
+    border-bottom: 2px solid var(--blanc);
+}
+
+.footer__logo {
+    width: auto;
+    height: var(--h1);
+    object-fit: contain;
+}
+
+.footer__logo-text {
+    width: auto;
+    height: var(--h2);
+    object-fit: contain;
+}
+
+.footer__partners {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-lg);
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__partner-logo {
+    max-width: 120px;
+    height: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        grid-template-columns: 1fr;
+    }
+
+    .footer__title {
+        font-size: var(--h3);
+    }
+
+    .footer__social-list {
+        justify-content: flex-start;
+    }
+}

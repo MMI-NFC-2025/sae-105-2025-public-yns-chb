@@ -1,0 +1,140 @@
+.menu {
+    position: fixed;
+    inset: 0;
+    z-index: 12;
+    background: var(--vert);
+    color: var(--blanc);
+    display: flex;
+    gap: var(--space-5xl);
+    flex-direction: column;
+    padding: var(--space-4xl);
+    visibility: visible;
+}
+
+.menu[hidden] {
+    visibility: hidden;
+}
+
+.menu__header {
+    background-color: var(--vert);
+    padding: var(--space-4xl) var(--space-4xl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: var(--space-2xl);
+    min-height: 100px;
+    margin: -var(--space-4xl) -var(--space-4xl) 0 -var(--space-4xl);
+}
+
+.menu__header-content {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu__header .menu-btn {
+    position: absolute;
+    right: var(--space-4xl);
+}
+
+.menu__header-content img {
+    height: 40px;
+    width: auto;
+}
+
+.menu__header-text {
+    color: var(--blanc);
+    font-size: var(--text-lg);
+    font-weight: 600;
+    margin: 0;
+}
+
+
+
+.menu__list,
+.menu__social-list,
+.menu__img {
+    position: relative;
+    z-index: 3;
+}
+
+
+.menu__list {
+    margin-top: 6rem;
+
+}
+
+.menu__item {
+    margin-bottom: var(--space-xl);
+}
+
+
+.menu__link {
+    color: var(--blanc);
+    text-decoration: none;
+    font-size: var(--h2);
+    font-family: var(--sans);
+    font-weight: 500;
+}
+
+.menu__social-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.menu__social-link {
+    color: var(--blanc);
+    text-decoration: none;
+}
+
+
+.menu__item,
+.menu__social-item,
+.menu__img {
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 0.2s ease;
+}
+
+.menu__item {
+    --i: 1;
+}
+
+.menu__item:nth-child(2) {
+    --i: 2;
+}
+
+.menu__item:nth-child(3) {
+    --i: 3;
+}
+
+.menu__item:nth-child(4),
+.menu__social-item:nth-child(1) {
+    --i: 4;
+}
+
+.menu__social-item:nth-child(2) {
+    --i: 5;
+}
+
+.menu__social-item:nth-child(3),
+.menu__img {
+    --i: 6;
+}
+
+.menu__item,
+.menu__social-item,
+.menu__img {
+    transition-delay: calc(var(--i) * 0.05s);
+}
+
+.menu[hidden] .menu__item,
+.menu[hidden] .menu__social-item,
+.menu[hidden] .menu__img {
+    transform: translateY(-20px);
+    opacity: 0;
+}
