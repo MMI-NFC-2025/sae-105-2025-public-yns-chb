@@ -1,0 +1,277 @@
+/* General Section Styles for Index */
+
+main {
+    padding: 0;
+    text-align: center;
+}
+
+main>h1:first-of-type {
+    padding: var(--space-4xl) var(--space-4xl);
+    padding-top: calc(80px + var(--space-4xl));
+    font-size: var(--h1);
+    color: var(--vert);
+    margin: var(--space-2xl) 0;
+}
+
+main>p {
+    padding: 0 var(--space-4xl);
+    font-size: var(--text-base);
+    color: var(--vert);
+    margin: var(--space-lg) 0;
+}
+
+/* Programme Section */
+.programme {
+    padding: var(--space-5xl) 20px;
+    margin-top: 30px;
+    background-color: var(--blanc);
+    margin-left: 20px;
+}
+
+.programme__header {
+    margin-bottom: 30px;
+}
+
+.programme__title {
+    font-size: var(--h2);
+    color: var(--vert);
+    margin: 0;
+}
+
+.programme__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-4xl);
+}
+
+.programme__item {
+    text-align: center;
+}
+
+/* Disable clicks on programme images */
+.programme__image-link {
+    pointer-events: none;
+    cursor: default;
+}
+
+.programme__image {
+    width: 100%;
+    height: 260px;
+    object-fit: contain;
+    background-color: #fff;
+    border-radius: var(--space-sm);
+    margin-bottom: 0;
+}
+
+.programme__artist {
+    font-size: var(--h3);
+    color: var(--noir);
+    margin-left: 45px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+.programme__artist {
+    text-align: left;
+}
+
+.programme__date {
+    font-size: var(--text-base);
+    color: var(--noir);
+    margin-left: 45px;
+    margin-top: 0;
+    margin-bottom: 40px;
+
+
+}
+
+.programme__date {
+    text-align: left;
+}
+
+/* Ticketing Section */
+.ticketing {
+    padding: var(--space-4xl) var(--space-4xl);
+    background-color: var(--bla nc);
+    color: var(--noir);
+}
+
+.ticketing__header {
+    margin-bottom: var(--space-2xl);
+    margin-top: var(--space-4xl);
+}
+
+.ticketing__header:first-child {
+    margin-top: 0;
+}
+
+.ticketing__title {
+    font-size: var(--h3);
+    color: var(--vert);
+    margin: 0;
+}
+
+.ticketing h2 {
+    margin-left: 20px;
+}
+
+.ticketing__list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--space-4xl) 0;
+    text-align: left;
+    max-width: 420px;
+    margin-left: 20px;
+
+}
+
+.ticketing__item {
+    padding: var(--space-sm) 0;
+    font-size: var(--texte-2);
+    color: var(--noir);
+    border-bottom: none;
+}
+
+.ticketing__item:last-child {
+    border-bottom: none;
+}
+
+/* Ticketing CTA Button */
+.ticketing__cta {
+    display: inline-block;
+    background-color: var(--vert);
+    color: var(--blanc);
+    padding: var(--space-md) var(--space-2xl);
+    border-radius: var(--space-sm);
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Ticketing CTA Section */
+.ticketing-cta {
+    padding: var(--space-4xl) var(--space-4xl);
+    background-color: var(--blanc);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.ticketing-cta__button {
+    display: inline-block;
+    background-color: var(--vert);
+    color: var(--blanc);
+    padding: var(--space-md) var(--space-2xl);
+    border-radius: var(--space-sm);
+    text-decoration: none;
+    font-size: var(--h3);
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.ticketing-cta__button:hover {
+    background-color: var(--vert);
+    opacity: 0.9;
+}
+
+/* Transport Section */
+.transport {
+    padding: var(--space-4xl) var(--space-4xl);
+    background-color: var(--blanc);
+    text-align: left;
+}
+
+.transport__header {
+    margin-bottom: var(--space-2xl);
+}
+
+.transport__title {
+    font-size: var(--h3);
+    color: var(--vert);
+    margin: 0;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.transport__description {
+    font-size: var(--texte-2);
+    color: var(--noir);
+    margin: var(--space-sm) 0 0 10px;
+    margin-left: 20px;
+}
+
+/* Partners Section */
+.partners {
+    padding: var(--space-4xl) var(--space-4xl);
+    background-color: var(--blanc);
+    color: var(--blanc);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2xl);
+}
+
+.partners__header {
+    margin-bottom: var(--space-2xl);
+    text-align: left;
+}
+
+.partners__title {
+    font-size: var(--h3);
+    color: var(--vert);
+    margin: 0;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.partners__container {
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-4xl);
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.partners__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.partners__logo {
+    max-width: 150px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Responsive */
+@media (max-width: 768px) 
+    main {
+        padding: var(--space-2xl) var(--space-2xl);
+        margin-top: 60px;
+    }
+
+    main h1 {
+        font-size: var(--h2);
+    }
+
+    .programme,
+    .ticketing,
+    .transport,
+    .partners {
+        padding: var(--space-2xl) var(--space-2xl);
+    }
+
+    .programme__container {
+        grid-template-columns: 1fr;
+        gap: var(--space-2xl);
+    }
+
+    .programme__image {
+        height: 200px;
+        color: var(--noir);
+
+        .ticketing__list {
+            max-width: 100%;
+        }
+    }

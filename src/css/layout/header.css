@@ -5,6 +5,7 @@
     left: 0;
     width: 100%;
     padding: var(--space-xl) var(--space-4xl);
+    padding-bottom: var(--space-4xl);
     display: flex;
     align-items: center;
     justify-content: space-between;

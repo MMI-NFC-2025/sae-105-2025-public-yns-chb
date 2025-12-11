@@ -2,7 +2,7 @@
 footer {
     background-color: var(--vert);
     color: var(--blanc);
-    padding: var(--space-3xl) var(--space-4xl);
+    padding: 10px;
 }
 
 .footer {
