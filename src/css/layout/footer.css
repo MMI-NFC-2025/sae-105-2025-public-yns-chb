@@ -2,7 +2,7 @@
 footer {
     background-color: var(--vert);
     color: var(--blanc);
-    padding: var(--space-5xl) var(--space-4xl);
+    padding: var(--space-3xl) var(--space-4xl);
 }
 
 .footer {
@@ -20,11 +20,13 @@ footer {
 }
 
 .footer__title {
-    font-size: var(--tex);
+    font-family: var(--roboto);
+    font-size: var(--texte-2);
+    font-weight: 400;
     color: var(--blanc);
     margin: 0;
+    margin-left: 15px;
     padding-bottom: var(--space-lg);
-    border-bottom: 2px solid var(--blanc);
 }
 
 .footer__nav-list,
@@ -32,6 +34,7 @@ footer {
     list-style: none;
     padding: 0;
     margin: 0;
+    margin-left: 20px;
     display: flex;
     flex-direction: column;
     gap: var(--space-md);
@@ -50,7 +53,7 @@ footer {
 
 .footer__social-list {
     flex-direction: row;
-    gap: var(--space-lg);
+    gap: 5px;
 }
 
 .footer__social-link {
@@ -59,14 +62,10 @@ footer {
     justify-content: center;
     width: 60px;
     height: 60px;
-    background-color: rgba(255, 255, 255, 0.1);
     border-radius: var(--space-md);
     transition: background-color 0.2s ease;
 }
 
-.footer__social-link:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}
 
 .footer__social-link img {
     width: 30px;
@@ -79,7 +78,7 @@ footer {
     align-items: center;
     gap: var(--space-md);
     padding-bottom: var(--space-2xl);
-    border-bottom: 2px solid var(--blanc);
+    margin-top: -20px;
 }
 
 .footer__logo {
@@ -92,20 +91,28 @@ footer {
     width: auto;
     height: var(--h2);
     object-fit: contain;
+    color: var(--blanc);
 }
 
 .footer__partners {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--space-lg);
+    gap: 10px;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    margin-left: 20px;
 }
 
 .footer__partner-logo {
-    max-width: 120px;
+    max-width: 90px;
     height: auto;
     object-fit: contain;
+}
+
+/* Ensure partner links don't enforce a fixed box */
+.footer__partner-link {
+    display: inline-flex;
+    align-items: center;
 }
 
 @media (max-width: 768px) {
