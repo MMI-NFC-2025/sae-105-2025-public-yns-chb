@@ -1279,7 +1279,7 @@ main>p {
     text-align: left;
     margin-left: 20px;
     margin-top: 40px;
-    
+
 
 }
 
@@ -1382,6 +1382,8 @@ main>p {
 .gallery__item {
     display: none;
     width: 100%;
+    pointer-events: none;
+    cursor: default;
 }
 
 .gallery__item.active {

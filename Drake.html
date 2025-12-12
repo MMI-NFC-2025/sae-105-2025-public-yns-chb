@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artistes</title>
+    <title>Drake</title>
     <meta name="description"
-        content="Découvrez les artistes phares du Savou Fest 2026, avec des performances inoubliables de Théodora, Drake et Remy Bond. Plongez dans leurs univers musicaux uniques les 12 et 13 juin." />
+        content="Découvrez Drake, l'artiste alternatif qui enflammera la scène 2 du Savou Fest le 13 juin 2026 à 19H. Plongez dans son univers cinématographique nostalgique et onirique à travers une performance inoubliable." />
 
 
     <link rel="icon" type="image/png" href="/assets/icons/Logo.svg" sizes="96x96" />
@@ -23,12 +23,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-
     <link rel="stylesheet" href="/src/css/style.css" />
     <script type="module" src="/src/js/script.js"></script>
-
-
-</head>
 
 <body>
     <header class="header">
@@ -42,7 +38,6 @@
             <img src="/assets/icons/Menu.svg" alt="Menu">
         </button>
         <nav class="menu" hidden>
-
             <ul class="menu__list">
                 <li class="menu__item"><a href="/" class="menu__link">Accueil</a></li>
                 <li class="menu__item"><a href="/le_festival.html" class="menu__link">Le Festival</a></li>
@@ -54,59 +49,80 @@
             </ul>
         </nav>
     </header>
-
     <main>
-        <h1>Artistes</h1>
+        <section class="hero hero--remybond">
+            <div class="hero__content">
+                <h1 class="hero__title">Drake</h1>
+            </div>
+        </section>
+
+        <section class="artist-detail">
+            <div class="artist-detail__content">
+                <p class="artist-detail__schedule">Le concert se déroulera le 13 juin 2026 à 19H sur la scène 2</p>
+                <a href="/assets/images/Scene2.jpg" class="artist-detail__stage-link"></a>
+                <img src="/assets/images/Scene2.jpg" alt="Scène 2 du festival" class="artist-detail__stage-image">
+
+                <header class="artist-detail__header">
+                    <h2 class="artist-detail__title">Remy Bond</h2>
+                </header>
+
+                <p class="artist-detail__description">Chanteuse née en 2004 à New York, Remy Bond mêle dream pop vintage
+                    et
+                    esthétique hollywoodienne
+                    rétro-glamour.</p>
+
+                <h3 class="artist-detail__section-title">Succès ascendant</h3>
+                <p class="artist-detail__section-content">Révélation avec Summer Song (25M écoutes), EP Backstage at The
+                    Tropicana (2025), signée Warner Records.
+                </p>
+
+                <h3 class="artist-detail__section-title">Show immersif</h3>
+                <p class="artist-detail__section-content">Univers cinématographique nostalgique et onirique sur scène.
+                </p>
+            </div>
+        </section>
     </main>
 
-    <section class="artist-card artist-card--theodora">
-        <div class="artist-card__content">
-            <a href="/theodora.html" class="artist-card__image-link">
-                <img src="/assets/images/Theodora.jpg" alt="Theodora de face" class="artist-card__image">
-            </a>
-            <header class="artist-card__header">
-                <h2 class="artist-card__name"><a href="/theodora.html">Théodora</a></h2>
-            </header>
-            <p class="artist-card__schedule">12 juin à 16h scène 2</p>
-        </div>
-    </section>
+    <section class="gallery">
+        <header class="gallery__header">
+            <h2 class="gallery__title">Galerie</h2>
+        </header>
+        <div class="gallery__container">
+            <button class="gallery__button gallery__button--prev" type="button" aria-label="Image précédente"
+                aria-description="Afficher la photo précédente de Remy Bond">❮</button>
+            <div class="gallery__carousel" role="region" aria-label="Galerie de photos de Remy Bond">
+                <a href="/assets/images/RemyBond1.jpg" class="gallery__item">
+                    <img src="/assets/images/RemyBond1.jpg" alt="Remy Bond en performance" loading="lazy"
+                        class="gallery__image">
+                </a>
 
-    <section class="artist-card artist-card--drake">
-        <div class="artist-card__content">
-            <a href="/Drake.html" class="artist-card__image-link">
-                <img src="/assets/images/Drake.jpg" alt="Drake en noir et blanc" class="artist-card__image">
-            </a>
-            <header class="artist-card__header">
-                <h2 class="artist-card__name"><a href="/Drake.html">Drake</a></h2>
-            </header>
-            <p class="artist-card__schedule">12 juin à 19h scène 1</p>
-        </div>
-    </section>
+                <a href="/assets/images/RemyBond2.jpg" class="gallery__item">
+                    <img src="/assets/images/RemyBond2.jpg" alt="Remy Bond de face" loading="lazy"
+                        class="gallery__image">
+                </a>
 
-    <section class="artist-card artist-card--remybond">
-        <div class="artist-card__content">
-            <a href="/RemyBond.html" class="artist-card__image-link">
-                <img src="/assets/images/RemyBond.jpg" alt="Rémy Bond en performance" loading="lazy"
-                    class="artist-card__image">
-            </a>
-            <header class="artist-card__header">
-                <h2 class="artist-card__name"><a href="/RemyBond.html">Remy Bond</a></h2>
-            </header>
+                <a href="/assets/images/RemyBond3.jpg" class="gallery__item">
+                    <img src="/assets/images/RemyBond3.jpg" alt="Remy Bond en performance" loading="lazy"
+                        class="gallery__image">
+                </a>
 
-            <p class="artist-card__schedule">13 juin à 19h scène 2</p>
-        </div>
-    </section>
+                <a href="/assets/images/RemyBond4.jpg" class="gallery__item">
+                    <img src="/assets/images/RemyBond4.jpg" alt="Remy Bond en shooting photo" loading="lazy"
+                        class="gallery__image">
+                </a>
 
-    <section class="artist-card artist-card--william">
-        <div class="artist-card__content">
-            <a href="/assets/images/Will.i.am.jpg" class="artist-card__image-link">
-                <img src="/assets/images/Will.i.am.jpg" alt="Will.i.am en performance" loading="lazy"
-                    class="artist-card__image">
-            </a>
-            <header class="artist-card__header">
-                <h2 class="artist-card__name">Will.i.am</h2>
-            </header>
-            <p class="artist-card__schedule">13 juin à 21h scène 1</p>
+                <a href="/assets/images/RemyBond5.jpg" class="gallery__item">
+                    <img src="/assets/images/RemyBond5.jpg" alt="Remy Bond en performance" loading="lazy"
+                        class="gallery__image">
+                </a>
+
+                <a href="/assets/images/RemyBond6.jpg" class="gallery__item">
+                    <img src="/assets/images/RemyBond6.jpg" alt="Remy Bond en performance" loading="lazy"
+                        class="gallery__image">
+                </a>
+            </div>
+            <button class="gallery__button gallery__button--next" type="button" aria-label="Image suivante"
+                aria-description="Afficher la photo suivante de Remy Bond">❯</button>
         </div>
     </section>
 
@@ -159,8 +175,6 @@
             </ul>
         </section>
     </footer>
-
-
 
 </body>
 
