@@ -463,7 +463,7 @@ main>p {
     margin: -3px;
     margin-left: 2px;
     display: inline;
-    
+
 }
 
 .team__bio {
@@ -515,7 +515,7 @@ main>p {
     color: var(--noir);
     margin: 0;
     font-family: var(--roboto);
-    
+
 }
 
 .values__description {
@@ -652,7 +652,8 @@ main>p {
     .artist__content {
         margin-left: 20px;
     }
-        .download {
+
+    .download {
         padding: var(--space-2xl) var(--space-2xl);
     }
 
@@ -661,6 +662,322 @@ main>p {
     }
 }
 
+/* Artists Page: Card Section */
+.artist-card {
+    padding: var(--space-2xl) var(--space-2xl);
+    background-color: var(--blanc);
+    text-align: center;
+}
+
+.artist-card__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 280px;
+}
+
+.artist-card__image {
+    width: 90%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: var(--space-sm);
+    display: block;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.artist-card__header {
+    background-color: var(--vert);
+    color: var(--blanc);
+    padding: var(--space-md) var(--space-md);
+    border-radius: 0 0 var(--space-sm) var(--space-sm);
+    margin: -5px var(--space-sm) 0 var(--space-sm);
+    ;
+    width: 90%;
+    margin-left: 20px;
+
+
+}
+
+.artist-card__name {
+    font-size: var(--h3);
+    color: var(--blanc);
+    margin: 0;
+    font-family: var(--sans);
+
+}
+
+.artist-card__name a {
+    color: var(--blanc);
+    text-decoration: none;
+}
+
+.artist-card__name a:hover {
+    opacity: 0.9;
+}
+
+.artist-card__schedule {
+    font-size: var(--texte-2);
+    color: var(--blanc);
+    margin: var(--space-xs) var(--space-md) 0 var(--space-md);
+    padding-bottom: var(--space-md);
+    background-color: var(--vert);
+    border-radius: 0 0 var(--space-sm) var(--space-sm);
+    width: 90%;
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+    .artist-card__content {
+        max-width: 100%;
+    }
+
+    .artist-card__image {
+        height: 280px;
+    }
+}
 
 
 
+
+/* Infos pratiques: Tickets */
+.tickets {
+    padding: var(--space-4xl) var(--space-4xl);
+    background-color: var(--blanc);
+    text-align: left;
+}
+
+.tickets__header {
+    margin-bottom: var(--space-2xl);
+}
+
+.tickets__title {
+    font-size: var(--h3);
+    color: var(--bleu);
+    margin: 0;
+    font-family: var(--roboto);
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.tickets__content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
+    gap: 40px;
+    margin-left: 20px;
+}
+
+.tickets__option {
+    background-color: var(--vert);
+    color: var(--blanc);
+    border-radius: 12px;
+    padding: var(--space-md);
+    width: 95%;
+    text-align: center;
+
+}
+
+.tickets__label {
+    font-size: var(--texte-1);
+    font-weight: 700;
+    margin: 0 0 var(--space-xs) 0;
+}
+
+.tickets__price {
+    font-size: var(--h3);
+    font-weight: 700;
+    margin: 0 0 var(--space-xs) 0;
+}
+
+.tickets__description {
+    font-size: var(--texte-2);
+    margin: 0;
+    line-height: 1.5;
+
+}
+
+/* Infos pratiques: Reduced rates */
+.reduced-rates {
+    padding: var(--space-4xl) var(--space-4xl);
+    text-align: left;
+}
+
+.reduced-rates__title {
+    font-size: var(--h3);
+    color: var(--bleu);
+    margin: 0;
+    font-family: var(--roboto);
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+}
+
+.reduced-rates__content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
+    gap: 40px;
+    margin-left: 20px;
+}
+
+.reduced-rates__option {
+    background-color: var(--vert);
+    color: var(--blanc);
+    border-radius: 12px;
+    padding: var(--space-md);
+    width: 95%;
+    text-align: center;
+}
+
+.reduced-rates__label {
+    font-size: var(--texte-1);
+    font-weight: 700;
+    margin: 0 0 var(--space-xs) 0;
+}
+
+.reduced-rates__price {
+    font-size: var(--h3);
+    font-weight: 700;
+    margin: 0 0 var(--space-xs) 0;
+}
+
+.reduced-rates__description {
+    font-size: var(--texte-2);
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Infos pratiques: Transport */
+.transport-info {
+    padding: var(--space-4xl) var(--space-4xl);
+    text-align: left;
+}
+
+.transport-info__title {
+    font-size: var(--h3);
+    color: var(--bleu);
+    margin: 0;
+    font-family: var(--roboto);
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-bottom: ;
+}
+
+.transport-info__content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 20px;
+}
+
+.transport-info__option {
+    background-color: var(--vert);
+    color: var(--blanc);
+    border-radius: 12px;
+    padding: var(--space-md);
+    width: 95%;
+
+}
+
+.transport-info__label {
+    font-size: var(--texte-1);
+    font-weight: 700;
+    margin: 0 0 var(--space-xxs) 0;
+}
+
+.transport-info__description {
+    font-size: var(--texte-2);
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Infos pratiques: FAQ */
+.faq {
+    padding: var(--space-4xl) var(--space-4xl);
+    text-align: left;
+}
+
+.faq__title {
+    font-size: var(--h3);
+    color: var(--bleu);
+    margin: 0;
+    font-family: var(--roboto);
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.faq__content {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    max-width: 680px;
+}
+
+.faq__item {
+    border: 1px solid var(--neutral-200);
+    border-radius: var(--space-sm);
+    padding: var(--space-sm) var(--space-md);
+    background: var(--blanc);
+}
+
+.faq__question {
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.faq__question::after {
+    content: '+';
+    margin-left: var(--space-sm);
+    transition: transform 0.2s ease;
+    color: var(--vert);
+    flex-shrink: 0;
+    font-size: var(--h1);
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+.faq__item[open] .faq__question::after {
+    content: '−';
+}
+
+.faq__question h3 {
+    font-size: var(--texte-1);
+    margin: 0;
+    color: var(--noir);
+    font-family: var(--roboto);
+    width: 95%;
+}
+
+.faq__answer p {
+    font-size: var(--texte-2);
+    margin: var(--space-xs) 0 0 0;
+    line-height: 1.6;
+    font-weight: 500;
+    color: var(--vert);
+    width: 95%;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+
+    .tickets__content,
+    .reduced-rates__content {
+        grid-template-columns: 1fr;
+    }
+
+    .transport-info__option {
+        max-width: 100%;
+    }
+
+    .faq__content {
+        max-width: 100%;
+    }
+}
