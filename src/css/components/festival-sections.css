@@ -1,0 +1,249 @@
+/* Festival Page Sections */
+
+/* Presentation Section */
+.presentation {
+    background-color: var(--blanc);
+    text-align: left;
+}
+
+.presentation__title {
+    font-size: var(--h3);
+    color: var(--bleu);
+    margin: 0 0 var(--texte-3) 0;
+    font-family: var(--roboto);
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.presentation__text {
+    font-size: var(--texte-2);
+    color: var(--noir);
+    line-height: 1.6;
+    margin: 0 0 var(--texte-3) 0;
+    width: 95%;
+    margin-left: 20px;
+}
+
+/* Objectives Section */
+.objectives {
+    background-color: var(--blanc);
+    text-align: left;
+}
+
+.objectives__title {
+    font-size: var(--h3);
+    color: var(--bleu);
+    margin: 0 0 var(--texte-3) 0;
+    font-family: var(--roboto);
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.objectives__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.objectives__item {
+    font-size: var(--texte-2);
+    color: var(--noir);
+    line-height: 1.6;
+    width: 95%;
+    margin-left: 20px;
+}
+
+/* Timeline Section */
+.timeline {
+    padding: var(--texte-1) var(--texte-1);
+    background-color: var(--blanc);
+    text-align: left;
+}
+
+.timeline__header {
+    margin-bottom: var(--texte-1);
+}
+
+.timeline__title {
+    font-size: var(--h3);
+    color: var(--bleu);
+    margin: 0 0 var(--texte-2) 0;
+    font-family: var(--roboto);
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.timeline__list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--h3) 0;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.timeline__year {
+    font-size: var(--texte-1);
+    font-weight: 700;
+    color: var(--noir);
+    margin: var(--texte-1) 0 var(--texte-4) 0;
+}
+
+.timeline__event {
+    font-size: var(--texte-2);
+    color: var(--noir);
+    font-weight: 400;
+    margin: 0 0 var(--texte-4) 0;
+    display: block;
+    width: 95%;
+}
+
+.timeline__description {
+    font-size: var(--texte-2);
+    color: var(--noir);
+    line-height: 1.6;
+    margin: 0 0 var(--texte-3) 0;
+    width: 95%;
+    display: block;
+}
+
+/* Team Section */
+.team {
+    background-color: var(--blanc);
+    text-align: left;
+}
+
+.team__header {
+    margin-bottom: var(--texte-1);
+    margin-top: 50px;
+}
+
+.team__title {
+    font-size: var(--h3);
+    color: var(--bleu);
+    margin: 0 0 var(--texte-2) 0;
+    font-family: var(--roboto);
+    margin-top: 0;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.team__container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--texte-1);
+    margin-left: 20px;
+}
+
+.team__member {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--texte-3);
+    flex-wrap: wrap;
+}
+
+.team__text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    flex: 1 1 calc(100% - 110px);
+    min-width: 220px;
+}
+
+.team__image {
+    width: 90px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: var(--texte-4);
+    margin-top: 12px;
+    flex: 0 0 90px;
+}
+
+.team__name {
+    font-size: var(--texte-2);
+    font-weight: 700;
+    color: var(--noir);
+    margin: -3px;
+    margin-left: 2px;
+    font-family: var(--roboto);
+    display: inline;
+}
+
+.team__role {
+    font-size: var(--texte-2);
+    color: var(--noir);
+    margin: -3px;
+    margin-left: 2px;
+    display: inline;
+}
+
+.team__bio {
+    font-size: var(--texte-2);
+    color: var(--noir);
+    margin: -3px;
+    margin-left: 2px;
+    display: inline;
+    margin-bottom: 15px;
+    width: 95%;
+}
+
+/* Values Section */
+.values {
+    background-color: var(--blanc);
+    text-align: left;
+}
+
+.values__header {
+    margin-bottom: var(--texte-1);
+}
+
+.values__title {
+    font-size: var(--h3);
+    color: var(--bleu);
+    margin: 0 0 var(--texte-2) 0;
+    font-family: var(--roboto);
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.values__container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--texte-1);
+    margin-left: 20px;
+}
+
+.values__item {
+    display: block;
+}
+
+.values__name {
+    font-size: var(--texte-2);
+    font-weight: 700;
+    color: var(--noir);
+    margin: 0;
+    font-family: var(--roboto);
+}
+
+.values__description {
+    font-size: var(--texte-2);
+    color: var(--noir);
+    margin: 2px 0 0 0;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+
+    .presentation__text,
+    .objectives__item,
+    .timeline__description {
+        width: 100%;
+    }
+
+    .values__container {
+        gap: var(--texte-2);
+    }
+}

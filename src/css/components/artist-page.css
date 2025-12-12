@@ -1,0 +1,131 @@
+/* Programme Page: Artist Sections */
+.artist {
+    background-color: var(--blanc);
+    text-align: left;
+}
+
+.artist__header {
+    margin-bottom: var(--texte-3);
+}
+
+.artist__title {
+    font-size: var(--h3);
+    color: var(--bleu);
+    margin: 0;
+    font-family: var(--sans);
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.artist__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--texte-4);
+    font-family: var(--roboto);
+}
+
+.artist__image {
+    width: 95%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: var(--texte-4);
+    background-color: var(--blanc);
+}
+
+.artist__genre {
+    font-size: var(--texte-2);
+    color: var(--noir);
+    margin: 0;
+}
+
+.artist__schedule {
+    font-size: var(--texte-1);
+    color: var(--noir);
+    margin: 0;
+    width: 95%;
+}
+
+/* Artist Detail Page (Théodora) */
+.artist-detail {
+    background-color: var(--blanc);
+    text-align: left;
+    margin-top: 40px;
+}
+
+.artist-detail__header {
+    margin-bottom: var(--texte-2);
+}
+
+.artist-detail__title {
+    font-size: var(--texte-1);
+    color: var(--noir);
+    margin: 0 0 var(--texte-3) 0;
+    font-family: var(--roboto);
+    margin-top: 30px;
+}
+
+.artist-detail__content {
+    max-width: 100%;
+}
+
+.artist-detail__schedule {
+    font-size: var(--texte-1);
+    color: var(--noir);
+    margin: 0 0 var(--texte-2) 0;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.artist-detail__stage-image {
+    width: 95%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+    margin: var(--texte-2) 0;
+    object-fit: cover;
+}
+
+.artist-detail__stage-link {
+    display: none;
+}
+
+.artist-detail__description {
+    font-size: var(--texte-1);
+    color: var(--noir);
+    margin: var(--texte-2) 0;
+    line-height: 1.6;
+    width: 95%;
+}
+
+.artist-detail__section-title {
+    font-size: var(--texte-1);
+    color: var(--noir);
+    font-weight: 700;
+    margin: 0;
+    font-family: var(--roboto);
+    margin-top: 30px;
+}
+
+.artist-detail__section-content {
+    font-size: var(--texte-1);
+    color: var(--noir);
+    margin: 0 0 var(--texte-2) 0;
+    line-height: 1.6;
+    width: 95%;
+}
+
+/* Programme Artist Image Links - Non-clickable */
+.artist__image-link {
+    pointer-events: none;
+    cursor: default;
+}
+
+@media (max-width: 768px) {
+    .artist__image {
+        height: 200px;
+    }
+
+    .artist__content {
+        margin-left: 20px;
+    }
+}

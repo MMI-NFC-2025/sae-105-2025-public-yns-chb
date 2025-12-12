@@ -1,0 +1,50 @@
+/* Download Section (Programme Page) */
+.download {
+    padding: var(--h3) var(--h3);
+    background-color: var(--blanc);
+    text-align: center;
+}
+
+.download__header {
+    margin-bottom: var(--texte-1);
+}
+
+.download__title {
+    font-size: var(--texte-1);
+    color: var(--vert);
+    margin: 0;
+    font-family: var(--roboto);
+    margin-top: 60px;
+}
+
+.download__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-bottom: var(--texte-1);
+    pointer-events: none;
+    /* disable click */
+    cursor: default;
+}
+
+.download__icon {
+    width: 80px;
+    height: auto;
+    transition: transform 0.3s ease;
+    margin-bottom: 40px;
+}
+
+.download__link:hover .download__icon {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .download {
+        padding: var(--texte-1) var(--texte-1);
+    }
+
+    .download__icon {
+        width: 60px;
+    }
+}

@@ -1,0 +1,70 @@
+/* Artists Page: Card Section */
+.artist-card {
+    background-color: var(--blanc);
+    text-align: center;
+}
+
+.artist-card__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 280px;
+}
+
+.artist-card__image {
+    width: 90%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: var(--texte-4);
+    display: block;
+    margin: 0 auto;
+}
+
+.artist-card__header {
+    background-color: var(--vert);
+    color: var(--blanc);
+    padding: var(--texte-3) var(--texte-3);
+    border-radius: 0 0 var(--texte-4) var(--texte-4);
+    width: 90%;
+    margin-left: 20px;
+    margin-top: -8px;
+}
+
+.artist-card__name {
+    font-size: var(--h3);
+    color: var(--blanc);
+    margin: 0 0 var(--texte-4) 0;
+    font-family: var(--sans);
+}
+
+.artist-card__name a {
+    color: var(--blanc);
+    text-decoration: none;
+}
+
+.artist-card__name a:hover {
+    opacity: 0.9;
+}
+
+.artist-card__schedule {
+    font-size: var(--texte-2);
+    color: var(--blanc);
+    margin: -8px var(--texte-3) 0 var(--texte-3);
+    padding-bottom: var(--texte-3);
+    background-color: var(--vert);
+    border-radius: 0 0 var(--texte-4) var(--texte-4);
+    width: 90%;
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+    .artist-card__content {
+        max-width: 100%;
+    }
+
+    .artist-card__image {
+        height: 280px;
+    }
+}

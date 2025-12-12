@@ -1,0 +1,156 @@
+/* Infos pratiques: Tickets */
+.tickets {
+    background-color: var(--blanc);
+    text-align: left;
+}
+
+.tickets__header {
+    margin-bottom: var(--texte-1);
+}
+
+.tickets__title {
+    font-size: var(--h3);
+    color: var(--bleu);
+    margin: 0;
+    font-family: var(--roboto);
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.tickets__content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
+    gap: 40px;
+    margin-left: 20px;
+}
+
+.tickets__option {
+    background-color: var(--vert);
+    color: var(--blanc);
+    border-radius: 12px;
+    padding: var(--texte-3);
+    width: 95%;
+    text-align: center;
+}
+
+.tickets__label {
+    font-size: var(--texte-1);
+    font-weight: 700;
+    margin: 0 0 var(--texte-4) 0;
+}
+
+.tickets__price {
+    font-size: var(--h3);
+    font-weight: 700;
+    margin: 0 0 var(--texte-4) 0;
+}
+
+.tickets__description {
+    font-size: var(--texte-2);
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Infos pratiques: Reduced rates */
+.reduced-rates {
+    text-align: left;
+}
+
+.reduced-rates__title {
+    font-size: var(--h3);
+    color: var(--bleu);
+    margin: 0;
+    font-family: var(--roboto);
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.reduced-rates__content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
+    gap: 40px;
+    margin-left: 20px;
+}
+
+.reduced-rates__option {
+    background-color: var(--vert);
+    color: var(--blanc);
+    border-radius: 12px;
+    padding: var(--texte-3);
+    width: 95%;
+    text-align: center;
+}
+
+.reduced-rates__label {
+    font-size: var(--texte-1);
+    font-weight: 700;
+    margin: 0 0 var(--texte-4) 0;
+}
+
+.reduced-rates__price {
+    font-size: var(--h3);
+    font-weight: 700;
+    margin: 0 0 var(--texte-4) 0;
+}
+
+.reduced-rates__description {
+    font-size: var(--texte-2);
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Infos pratiques: Transport */
+.transport-info {
+    text-align: left;
+}
+
+.transport-info__title {
+    font-size: var(--h3);
+    color: var(--bleu);
+    margin: 0;
+    font-family: var(--roboto);
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.transport-info__content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 20px;
+}
+
+.transport-info__option {
+    background-color: var(--vert);
+    color: var(--blanc);
+    border-radius: 12px;
+    padding: var(--texte-3);
+    width: 95%;
+}
+
+.transport-info__label {
+    font-size: var(--texte-1);
+    font-weight: 700;
+    margin: 0 0 var(--texte-4) 0;
+}
+
+.transport-info__description {
+    font-size: var(--texte-2);
+    margin: 0;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+
+    .tickets__content,
+    .reduced-rates__content {
+        grid-template-columns: 1fr;
+    }
+
+    .transport-info__option {
+        max-width: 100%;
+    }
+}

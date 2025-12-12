@@ -11,9 +11,22 @@
 /* Layout */
 @import "layout/header.css";
 @import "layout/footer.css";
-@import "layout/section.css";
+@import "layout/base.css";
+@import "layout/transport.css";
+@import "layout/partners.css";
 
 /* Components */
 @import "components/menu.css";
 @import "components/hero.css";
 @import "components/breadcrumb.css";
+@import "components/programme.css";
+@import "components/artist-card.css";
+@import "components/gallery.css";
+@import "components/ticketing.css";
+@import "components/festival-sections.css";
+@import "components/artist-page.css";
+@import "components/stage.css";
+@import "components/ticketing-infos.css";
+@import "components/faq.css";
+@import "components/contact.css";
+@import "components/download.css";

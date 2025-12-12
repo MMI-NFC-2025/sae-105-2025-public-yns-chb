@@ -57,66 +57,68 @@
 
     <main>
         <h1>Contact</h1>
+
+        <section class="contact-form">
+            <header class="contact-form__header">
+                <h2 class="contact-form__title">Formulaire de contact</h2>
+            </header>
+            <form class="contact-form__content">
+                <label class="contact-form__label" for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" required>
+
+                <label class="contact-form__label" for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label class="contact-form__label" for="objet">Objet</label>
+                <select id="objet" name="objet" required>
+                    <option value="">Sélectionnez un objet</option>
+                    <option value="billeterie" class="contact-form__option">Billeterie</option>
+                    <option value="programme" class="contact-form__option">Programme</option>
+                    <option value="autre" class="contact-form__option">Autre</option>
+                </select>
+
+                <label class="contact-form__label" for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" class="contact-form__submit">Envoyer</button>
+            </form>
+        </section>
+
+        <section class="contact-info">
+            <header class="contact-info__header">
+                <h2 class="contact-info__title">Coordonnées</h2>
+            </header>
+            <div class="contact-info__content">
+                <p class="contact-info__item"><span class="contact-info__label">Email</span> contact@savoufest.fr</p>
+
+                <p class="contact-info__item"><span class="contact-info__label">Téléphone</span> +33 (0)3 29 XX XX XX
+                </p>
+
+                <p class="contact-info__item"><span class="contact-info__label">Adresse</span> 12 Route de la Forêt
+                    88400
+                    Gérardmer</p>
+            </div>
+        </section>
+
+        <section class="social-links">
+            <header class="social-links__header">
+                <h2 class="social-links__title">Réseaux sociaux</h2>
+            </header>
+            <div class="social-links__content">
+                <a href="/assets/favicons/Facebook.svg" class="social-links__item">
+                    <img src="/assets/favicons/Facebook.svg" alt="Logo Facebook" class="social-links__icon">
+                </a>
+
+                <a href="/assets/favicons/TikTok.svg" class="social-links__item">
+                    <img src="/assets/favicons/TikTok.svg" alt="Logo TikTok" class="social-links__icon">
+                </a>
+
+                <a href="/assets/favicons/Insta.svg" class="social-links__item">
+                    <img src="/assets/favicons/Insta.svg" alt="Logo Instagram" class="social-links__icon">
+                </a>
+            </div>
+        </section>
     </main>
-
-    <section class="contact-form">
-        <header class="contact-form__header">
-            <h2 class="contact-form__title">Formulaire de contact</h2>
-        </header>
-        <form class="contact-form__content">
-            <label class="contact-form__label" for="nom">Nom</label>
-            <input type="text" id="nom" name="nom" required>
-
-            <label class="contact-form__label" for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-
-            <label class="contact-form__label" for="objet">Objet</label>
-            <select id="objet" name="objet" required>
-                <option value="">Sélectionnez un objet</option>
-                <option value="billeterie" class="contact-form__option">Billeterie</option>
-                <option value="programme" class="contact-form__option">Programme</option>
-                <option value="autre" class="contact-form__option">Autre</option>
-            </select>
-
-            <label class="contact-form__label" for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit" class="contact-form__submit">Envoyer</button>
-        </form>
-    </section>
-
-    <section class="contact-info">
-        <header class="contact-info__header">
-            <h2 class="contact-info__title">Coordonnées</h2>
-        </header>
-        <div class="contact-info__content">
-            <p class="contact-info__item"><span class="contact-info__label">Email</span> contact@savoufest.fr</p>
-
-            <p class="contact-info__item"><span class="contact-info__label">Téléphone</span> +33 (0)3 29 XX XX XX</p>
-
-            <p class="contact-info__item"><span class="contact-info__label">Adresse</span> 12 Route de la Forêt 88400
-                Gérardmer</p>
-        </div>
-    </section>
-
-    <section class="social-links">
-        <header class="social-links__header">
-            <h2 class="social-links__title">Réseaux sociaux</h2>
-        </header>
-        <div class="social-links__content">
-            <a href="/assets/favicons/Facebook.svg" class="social-links__item">
-                <img src="/assets/favicons/Facebook.svg" alt="Logo Facebook" class="social-links__icon">
-            </a>
-
-            <a href="/assets/favicons/TikTok.svg" class="social-links__item">
-                <img src="/assets/favicons/TikTok.svg" alt="Logo TikTok" class="social-links__icon">
-            </a>
-
-            <a href="/assets/favicons/Insta.svg" class="social-links__item">
-                <img src="/assets/favicons/Insta.svg" alt="Logo Instagram" class="social-links__icon">
-            </a>
-        </div>
-    </section>
 
     <footer>
         <div class="footer__logo-section">

@@ -1,0 +1,93 @@
+/* Ticketing Section */
+.ticketing {
+    padding: var(--h3) var(--h3);
+    background-color: var(--blanc);
+    color: var(--noir);
+}
+
+.ticketing__header {
+    margin-bottom: var(--texte-1);
+    margin-top: var(--h3);
+}
+
+.ticketing__header:first-child {
+    margin-top: 0;
+}
+
+.ticketing__title {
+    font-size: var(--h3);
+    color: var(--vert);
+    margin: 0;
+}
+
+.ticketing h2 {
+    margin-left: 20px;
+}
+
+.ticketing__list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--h3) 0;
+    text-align: left;
+    max-width: 420px;
+    margin-left: 20px;
+}
+
+.ticketing__item {
+    padding: var(--texte-4) 0;
+    font-size: var(--texte-2);
+    color: var(--noir);
+    border-bottom: none;
+}
+
+.ticketing__item:last-child {
+    border-bottom: none;
+}
+
+/* Ticketing CTA Button */
+.ticketing__cta {
+    display: inline-block;
+    background-color: var(--vert);
+    color: var(--blanc);
+    padding: var(--texte-3) var(--texte-1);
+    border-radius: var(--texte-4);
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Ticketing CTA Section */
+.ticketing-cta {
+    padding: var(--h3) var(--h3);
+    background-color: var(--blanc);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.ticketing-cta__button {
+    display: inline-block;
+    background-color: var(--vert);
+    color: var(--blanc);
+    padding: var(--texte-3) var(--texte-1);
+    border-radius: var(--texte-4);
+    text-decoration: none;
+    font-size: var(--h3);
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.ticketing-cta__button:hover {
+    background-color: var(--vert);
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+
+    .ticketing,
+    .ticketing-cta {
+        padding: var(--texte-1) var(--texte-1);
+    }
+
+    .ticketing__list {
+        max-width: 100%;
+    }
+}

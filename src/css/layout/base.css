@@ -1,0 +1,31 @@
+/* General Section Styles for Index */
+
+main {
+    padding: 0;
+    text-align: center;
+}
+
+main>h1:first-of-type {
+    margin-top: 50px;
+    font-size: var(--h1);
+    color: var(--vert);
+    margin-left: 20px;
+}
+
+main>p {
+    padding: 0 var(--h3);
+    font-size: var(--text-base);
+    color: var(--vert);
+    margin: var(--texte-2) 0;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: var(--texte-1) var(--texte-1);
+        margin-top: 60px;
+    }
+
+    main h1 {
+        font-size: var(--h2);
+    }
+}
