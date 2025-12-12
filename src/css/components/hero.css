@@ -30,6 +30,17 @@
 
 }
 
+/* Hero override for Scène secondaire */
+.hero--secondary-stage {
+    height: 220px;
+    background-image: url('/assets/images/Scene2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: var(--space-3xl);
+
+}
+
 /* Hero override for Théodora */
 .hero--theodora {
     height: 300px;

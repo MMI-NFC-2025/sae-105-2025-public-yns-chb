@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scènes</title>
+    <title>Scène secondaire</title>
     <meta name="description"
-        content="Explorez les différentes scènes du Savou Fest 2026, chacune offrant une ambiance unique et des performances inoubliables. Découvrez où et quand vos artistes préférés se produiront les 12 et 13 juin." />
-
+        content="Découvrez la scène secondaire du Savou Fest, où les plus grands artistes se produiront les 12 et 13 juin 2026. Ne manquez pas les performances de Drake et Will.i.am dans une ambiance électrisante !" />
 
     <link rel="icon" type="image/png" href="/assets/icons/Logo.svg" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/assets/icons/Logo.svg" />
@@ -50,32 +49,35 @@
             </ul>
         </nav>
     </header>
-
     <main>
-        <h1>Scènes</h1>
+        <section class="hero hero--secondary-stage">
+            <h1 class="hero__title">Scène secondaire</h1>
+        </section>
+
+        <section class="main-stage">
+            <header class="main-stage__header">
+                <h2 class="main-stage__title">Artistes</h2>
+            </header>
+            <div class="main-stage__container">
+                <article class="main-stage__artist">
+                    <h3 class="main-stage__artist-name"><a href="/theodora.html">Théodora</a></h3>
+                    <a href="/theodora.html" class="main-stage__image-link">
+                        <img src="/assets/images/Theodora.jpg" alt="Théodora de face" class="main-stage__image">
+                    </a>
+                    <p class="main-stage__artist-schedule">12 juin à 16h</p>
+                </article>
+
+                <article class="main-stage__artist">
+                    <h3 class="main-stage__artist-name"><a href="/RemyBond.html">Remy Bond</a></h3>
+                    <a href="/RemyBond.html" class="main-stage__image-link">
+                        <img src="/assets/images/RemyBond.jpg" alt="Remy Bond en shooting photo" loading="lazy"
+                            class="main-stage__image">
+                    </a>
+                    <p class="main-stage__artist-schedule">13 juin à 19h</p>
+                </article>
+            </div>
+        </section>
     </main>
-
-    <section class="stage stage--primary">
-        <header class="stage__header">
-            <h2 class="stage__title"><a href="/Scène_principale.html" class="stage__link">Scène principale</a></h2>
-        </header>
-        <div class="stage__content">
-            <a href="/Scène_principale.html" class="stage__image-link">
-                <img src="/assets/images/Scene1.jpg" alt="Scène 1 du festival" class="stage__image">
-            </a>
-        </div>
-    </section>
-
-    <section class="stage stage--secondary">
-        <header class="stage__header">
-            <h2 class="stage__title"><a href="/Scène_secondaire.html" class="stage__link">Scène secondaire</a></h2>
-        </header>
-        <div class="stage__content">
-            <a href="/Scène_secondaire.html" class="stage__image-link">
-                <img src="/assets/images/Scene2.jpg" alt="Scène 2 du festival" class="stage__image">
-            </a>
-        </div>
-    </section>
 
     <footer>
         <div class="footer__logo-section">
@@ -126,6 +128,8 @@
             </ul>
         </section>
     </footer>
+
+
 </body>
 
 </html>

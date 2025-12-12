@@ -1212,13 +1212,14 @@ main>p {
 }
 
 .main-stage__title {
-    font-size: var(--h2);
-    color: var(--vert);
+    font-size: var(--h3);
+    color: var(--bleu);
     margin: 0 0 var(--space-xl) 0;
     padding-left: 0;
     margin-left: 20px;
     margin-bottom: 30px;
     margin-top: 30px;
+    font-family: var(--roboto);
 
 }
 
@@ -1235,7 +1236,7 @@ main>p {
 }
 
 .main-stage__artist-name {
-    font-size: var(--h3);
+    font-size: var(--texte-1);
     color: var(--bleu);
     margin: 0 0 6px 0;
     text-align: left;
