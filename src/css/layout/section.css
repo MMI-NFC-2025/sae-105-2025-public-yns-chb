@@ -6,11 +6,10 @@ main {
 }
 
 main>h1:first-of-type {
-    padding: var(--h3) var(--h3);
-    padding-top: calc(80px + var(--h3));
+    margin-top: 50px;
     font-size: var(--h1);
     color: var(--vert);
-    margin: var(--texte-1) 0;
+    margin-left: 20px;
 }
 
 main>p {
