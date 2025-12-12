@@ -1243,6 +1243,19 @@ main>p {
     margin-left: 20px;
 }
 
+.main-stage__artist-name a {
+    color: var(--bleu);
+    text-decoration: none;
+}
+
+.main-stage__artist-name a:hover {
+    text-decoration: underline;
+}
+
+.main-stage__artist-name a:visited {
+    color: var(--bleu);
+}
+
 .main-stage__image-link {
     display: block;
     width: 95%;
