@@ -6,7 +6,7 @@
 - NOM : Chouhib-Forster
 - PRÉNOM : Yanis
 - GROUPE : B2
-- URL du site : 
+- URL du site : https://magical-semifreddo-afc475.netlify.app/
 - URL FIGMA : https://www.figma.com/design/axtMYmbOsIyPvhDbW6rGoN/Maquette-Mobile-SAE-105?node-id=1-2&t=htKJ39WjMJ17KfP4-1
 
 ## Sujet
