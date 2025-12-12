@@ -63,24 +63,26 @@
         <header class="contact-form__header">
             <h2 class="contact-form__title">Formulaire de contact</h2>
         </header>
-        <div class="contact-form__content">
-            <br>
-            <p class="contact-form__label">Nom</p>
-            <br>
+        <form class="contact-form__content">
+            <label class="contact-form__label" for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" required>
 
-            <p class="contact-form__label">Email</p>
-            <br>
+            <label class="contact-form__label" for="email">Email</label>
+            <input type="email" id="email" name="email" required>
 
-            <p class="contact-form__label">Objet</p>
-            <p class="contact-form__option">Billeterie</p>
-            <p class="contact-form__option">Programme</p>
-            <p class="contact-form__option">Autre</p>
-            <br>
-            <p class="contact-form__label">Message</p>
-            <br>
+            <label class="contact-form__label" for="objet">Objet</label>
+            <select id="objet" name="objet" required>
+                <option value="">Sélectionnez un objet</option>
+                <option value="billeterie" class="contact-form__option">Billeterie</option>
+                <option value="programme" class="contact-form__option">Programme</option>
+                <option value="autre" class="contact-form__option">Autre</option>
+            </select>
 
-            <p class="contact-form__submit">Envoyer</p>
-        </div>
+            <label class="contact-form__label" for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" class="contact-form__submit">Envoyer</button>
+        </form>
     </section>
 
     <section class="contact-info">
@@ -110,8 +112,8 @@
                 <img src="/assets/favicons/TikTok.svg" alt="Logo TikTok" class="social-links__icon">
             </a>
 
-            <a href="/assets/favicons/Instagram.svg" class="social-links__item">
-                <img src="/assets/favicons/Instagram.svg" alt="Logo Instagram" class="social-links__icon">
+            <a href="/assets/favicons/Insta.svg" class="social-links__item">
+                <img src="/assets/favicons/Insta.svg" alt="Logo Instagram" class="social-links__icon">
             </a>
         </div>
     </section>

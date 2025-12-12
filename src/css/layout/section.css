@@ -629,6 +629,9 @@ main>p {
     justify-content: center;
     text-decoration: none;
     margin-bottom: var(--space-2xl);
+    pointer-events: none;
+    /* disable click */
+    cursor: default;
 }
 
 .download__icon {
@@ -863,7 +866,7 @@ main>p {
     font-family: var(--roboto);
     margin-top: 50px;
     margin-left: 20px;
-    margin-bottom: ;
+    margin-bottom: 20px;
 }
 
 .transport-info__content {
@@ -980,4 +983,289 @@ main>p {
     .faq__content {
         max-width: 100%;
     }
+}
+
+/* Contact Page */
+.contact-form {
+    padding: var(--space-4xl) var(--space-4xl);
+    background-color: var(--blanc);
+    text-align: left;
+}
+
+.contact-form__title {
+    font-size: var(--h3);
+    color: var(--bleu);
+    margin: 0 0 var(--space-lg) 0;
+    font-family: var(--roboto);
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.contact-form__content {
+    margin-left: 20px;
+    max-width: 400px;
+    border: 2px solid var(--noir);
+    padding: var(--space-lg);
+    border-radius: var(--space-sm);
+}
+
+.contact-form__label {
+    font-size: var(--texte-2);
+    font-weight: 400;
+    color: var(--noir);
+    margin: var(--space-md) 0 var(--space-xs) 0;
+    display: block;
+}
+
+.contact-form__option {
+    font-size: var(--texte-2);
+    color: var(--noir);
+    margin: var(--space-xxs) 0;
+    padding-left: var(--space-sm);
+}
+
+.contact-form__submit {
+    display: inline-block;
+    background-color: var(--vert);
+    color: var(--blanc);
+    padding: 8px var(--space-xl);
+    border-radius: 4px;
+    font-size: var(--texte-2);
+    font-weight: 400;
+    margin-top: var(--space-lg);
+    cursor: pointer;
+    border: none;
+}
+
+/* Form inputs */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 2px solid #999;
+    border-radius: 8px;
+    font-size: var(--texte-2);
+    font-family: var(--roboto);
+    margin: 4px 0 var(--space-sm) 0;
+    box-sizing: border-box;
+}
+
+.contact-form input[type="text"]:first-of-type,
+.contact-form input[type="text"]:first-of-type:focus {
+    border-color: var(--bleu);
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--bleu);
+}
+
+.contact-form textarea {
+    height: 140px;
+    resize: none;
+}
+
+/* Contact Info */
+.contact-info {
+    padding: var(--space-4xl) var(--space-4xl);
+    background-color: var(--blanc);
+    text-align: left;
+}
+
+.contact-info__title {
+    font-size: var(--h3);
+    color: var(--bleu);
+    margin: 0 0 var(--space-lg) 0;
+    font-family: var(--roboto);
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-info__content {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.contact-info__item {
+    font-size: var(--texte-2);
+    color: var(--noir);
+    margin: 0;
+}
+
+.contact-info__label {
+    font-weight: 700;
+    margin-right: var(--space-xs);
+}
+
+/* Social Links */
+.social-links {
+    padding: var(--space-4xl) var(--space-4xl);
+    background-color: var(--blanc);
+    text-align: left;
+}
+
+.social-links__title {
+    font-size: var(--h3);
+    color: var(--bleu);
+    margin: 0 0 var(--space-lg) 0;
+    font-family: var(--roboto);
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.social-links__content {
+    margin-left: 20px;
+    display: flex;
+    gap: var(--space-2xl);
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.social-links__icon {
+    width: 48px;
+    height: 48px;
+    transition: transform 0.3s ease;
+}
+
+.social-links__item:hover .social-links__icon {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .contact-form__content {
+        max-width: 100%;
+    }
+
+    .social-links__icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Stages Section */
+.stage {
+    padding: var(--space-4xl) var(--space-4xl);
+    background-color: var(--blanc);
+    margin-bottom: var(--space-3xl);
+}
+
+.stage__header {
+    margin-bottom: var(--space-lg);
+   
+}
+
+.stage__title {
+    font-size: var(--texte-1);
+    color: var(--noir);
+    margin: 0;
+    text-align: left;
+    padding-left: 0;
+    font-family: var(--roboto);
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+.stage__link {
+    color: var(--noir);
+    text-decoration: none;
+}
+
+.stage__link:hover {
+    color: var(--vert);
+}
+
+.stage__content {
+    display: flex;
+    justify-content: center;
+}
+
+.stage__image-link {
+    display: block;
+    width: 90%;
+    max-width: 600px;
+}
+
+.stage__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Main Stage Page */
+.main-stage {
+    padding: var(--space-4xl) 20px;
+    background-color: var(--blanc);
+    text-align: left;
+}
+
+.main-stage__title {
+    font-size: var(--h2);
+    color: var(--vert);
+    margin: 0 0 var(--space-xl) 0;
+    padding-left: 0;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    
+}
+
+.main-stage__container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3xl);
+    align-items: flex-start;
+}
+
+.main-stage__artist {
+    width: 100%;
+    max-width: 360px;
+}
+
+.main-stage__artist-name {
+    font-size: var(--h3);
+    color: var(--bleu);
+    margin: 0 0 6px 0;
+    text-align: left;
+    padding-left: 0;
+    margin-left: 20px;
+}
+
+.main-stage__image-link {
+    display: block;
+    width: 95%;
+    margin-left: 20px;
+}
+
+.main-stage__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+    margin-bottom: var(--space-sm);
+}
+
+.main-stage__artist-schedule {
+    margin: 0;
+    color: var(--noir);
+    font-size: var(--texte-1);
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+/* Programme Artist Image Links - Non-clickable */
+.artist__image-link {
+    pointer-events: none;
+    cursor: default;
 }
