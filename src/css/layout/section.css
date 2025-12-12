@@ -691,7 +691,7 @@ main>p {
     padding: var(--texte-3) var(--texte-3);
     border-radius: 0 0 var(--texte-4) var(--texte-4);
     width: 90%;
-    margin-left: 25px;
+    margin-left: 20px;
     margin-top: -8px;
 }
 
@@ -721,7 +721,7 @@ main>p {
     background-color: var(--vert);
     border-radius: 0 0 var(--texte-4) var(--texte-4);
     width: 90%;
-    margin-left: 25px;
+    margin-left: 20px;
     margin-bottom: 40px;
 }
 
