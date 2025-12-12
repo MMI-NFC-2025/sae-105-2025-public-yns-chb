@@ -10,7 +10,7 @@ html {
 
 /* Sélection de texte personnalisée */
 ::selection {
-    background-color: var(--toniqueLight);
+    background-color: var(--blanc);
 }
 
 body {
@@ -59,9 +59,7 @@ textarea {
     cursor: pointer;
 }
 
-/* --- CLASSES UTILITAIRES --- */
 
-/* Enlève l'apparence par défaut des listes */
 ul,
 ol {
     list-style: none;
@@ -75,21 +73,18 @@ li {
 }
 
 
-/* Pour rendre invisible mais laisser accessible */
+
 .u-sr-only {
     position: absolute !important;
-    inline-size: 1px;
-    /* width logique */
+    inline-size: 1px;  
     block-size: 1px;
-    /* height logique */
     margin: -1px;
     padding: 0;
     overflow: hidden;
     white-space: nowrap;
-    /* évite le retour à la ligne */
     border: 0;
 
-    /* Masquage moderne + fallback */
+ 
     clip-path: inset(50%);
 }
 
@@ -98,17 +93,17 @@ li {
 }
 
 .u-highlight {
-    color: var(--tonique-light);
+    color: var(--blanc);
 }
 
 .u-intro {
-    font-size: var(--text-2xl);
-    color: var(--dark);
+    font-size: var(--text-1);
+    color: var(--noir);
     font-weight: 600;
 }
 
 .u-grid-col-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-2xl);
+    
 }

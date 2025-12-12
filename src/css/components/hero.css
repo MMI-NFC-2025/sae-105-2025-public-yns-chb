@@ -1,6 +1,7 @@
 /* Hero Section */
 .hero {
-    width: 100%;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
     height: 400px;
     background-image: url('/assets/images/Hero.jpg');
     background-size: cover;
@@ -14,7 +15,7 @@
     justify-content: flex-end;
     color: var(--blanc);
     text-align: left;
-    padding: var(--space-4xl);
+    padding: var(--h2);
 }
 
 
@@ -26,7 +27,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: var(--space-3xl);
+    padding: var(--h3);
 
 }
 
@@ -37,7 +38,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: var(--space-3xl);
+    padding: var(--h3);
 
 }
 
@@ -48,7 +49,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: var(--space-3xl);
+    padding: var(--h3);
 
 }
 
@@ -59,7 +60,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: var(--space-3xl);
+    padding: var(--h3);
 }
 
 /* Hero override for Drake */
@@ -69,7 +70,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: var(--space-3xl);
+    padding: var(--h3);
 }
 
 /* Hero override for Will.i.am */
@@ -79,7 +80,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: var(--space-3xl);
+    padding: var(--h3);
 }
 
 

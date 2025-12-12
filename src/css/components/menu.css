@@ -5,9 +5,9 @@
     background: var(--vert);
     color: var(--blanc);
     display: flex;
-    gap: var(--space-5xl);
+    gap: var(--h3);
     flex-direction: column;
-    padding: var(--space-4xl);
+    padding: var(--h3);
     visibility: visible;
     transition: opacity 0.3s ease, visibility 0.3s ease;
     opacity: 1;
@@ -20,20 +20,20 @@
 
 .menu__header {
     background-color: var(--vert);
-    padding: var(--space-4xl) var(--space-4xl);
+    padding: var(--h3) var(--h3);
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    gap: var(--space-2xl);
+    gap: var(--texte-1);
     min-height: 100px;
-    margin: -var(--space-4xl) -var(--space-4xl) 0 -var(--space-4xl);
+    margin: -var(--h3) -var(--h3) 0 -var(--h3);
 }
 
 .menu__header-content {
     display: flex;
     align-items: center;
-    gap: var(--space-lg);
+    gap: var(--texte-2);
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -41,7 +41,7 @@
 
 .menu__header .menu-btn {
     position: absolute;
-    right: var(--space-4xl);
+    right: var(--h3);
 }
 
 .menu__header-content img {
@@ -51,7 +51,7 @@
 
 .menu__header-text {
     color: var(--blanc);
-    font-size: var(--text-lg);
+    font-size: var(--text-l);
     font-weight: 600;
     margin: 0;
 }
@@ -72,7 +72,7 @@
 }
 
 .menu__item {
-    margin-bottom: var(--space-xl);
+    margin-bottom: var(--texte-1);
 }
 
 

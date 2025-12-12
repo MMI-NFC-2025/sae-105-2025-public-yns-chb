@@ -1,12 +1,12 @@
 /* Breadcrumb Navigation */
 .breadcrumb {
-    background-color: var(--gris-clair);
-    padding: var(--space-md) var(--space-lg);
+    background-color: var(--blanc);
+    padding: var(--texte-3) var(--texte-2);
     margin: 0;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: var(--space-sm);
+    gap: var(--texte-4);
     font-size: 0.9rem;
 }
 
@@ -17,31 +17,31 @@
 
 .breadcrumb__item:not(:last-child)::after {
     content: " / ";
-    margin-left: var(--space-sm);
-    margin-right: var(--space-sm);
+    margin-left: var(--texte-4);
+    margin-right: var(--texte-4);
     color: var(--gris);
 }
 
 .breadcrumb__link {
-    color: var(--primaire);
+    color: var(--noir);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .breadcrumb__link:hover {
-    color: var(--secondaire);
+    color: var(--noir);
     text-decoration: underline;
 }
 
 .breadcrumb__item:last-child .breadcrumb__link {
-    color: var(--gris);
+    color: var(--bleu);
     cursor: default;
     pointer-events: none;
 }
 
 @media (max-width: 768px) {
     .breadcrumb {
-        padding: var(--space-sm) var(--space-md);
+        padding: var(--texte-4) var(--texte-3);
         font-size: 0.85rem;
     }
 }
