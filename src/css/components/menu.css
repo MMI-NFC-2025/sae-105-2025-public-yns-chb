@@ -9,10 +9,13 @@
     flex-direction: column;
     padding: var(--space-4xl);
     visibility: visible;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 1;
 }
 
 .menu[hidden] {
     visibility: hidden;
+    opacity: 0;
 }
 
 .menu__header {
@@ -79,6 +82,7 @@
     font-size: var(--h2);
     font-family: var(--sans);
     font-weight: 500;
+    margin-left: 20px;
 }
 
 .menu__social-list {

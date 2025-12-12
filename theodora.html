@@ -51,58 +51,73 @@
     </header>
 
     <main>
-        <h1>Théodora</h1>
+        <section class="hero hero--theodora">
+            <div class="hero__content">
+                <h1 class="hero__title">Théodora</h1>
+            </div>
+        </section>
+
+        <section class="artist-detail">
+            <div class="artist-detail__content">
+                <p class="artist-detail__schedule">Le concert se déroulera le 12 juin 2026 à 16H sur la scène 2</p>
+                <a href="/assets/images/Scene2.jpg" class="artist-detail__stage-link"></a>
+                <img src="/assets/images/Scene2.jpg" alt="Scène 2 du festival" class="artist-detail__stage-image">
+
+                <header class="artist-detail__header">
+                    <h2 class="artist-detail__title">Boss Lady</h2>
+                </header>
+
+                <p class="artist-detail__description">Chanteuse rap née en 2003, Théodora mêle rap, afro et bouyon avec
+                    des
+                    textes audacieux sur l'identité noire
+                    et
+                    l'hyperféminité.​</p>
+
+                <h3 class="artist-detail__section-title">Succès viral</h3>
+                <p class="artist-detail__section-content">Explosée via Kongolese sous BBL (certifié or) et Bad Boy
+                    Lovestory, Révélation Flammes 2025.</p>
+
+                <h3 class="artist-detail__section-title">Show électrisant</h3>
+                <p class="artist-detail__section-content">Énergie brute et dansante sur scène</p>
+            </div>
+        </section>
     </main>
-
-    <section class="artist-detail">
-        <header class="artist-detail__header">
-            <h2 class="artist-detail__title">Boss Lady</h2>
-        </header>
-        <div class="artist-detail__content">
-            <p class="artist-detail__schedule">Le concert se déroulera le 12 juin 2026 à 16H sur la scène 2</p>
-            <a href="/assets/images/Scene2.jpg" class="artist-detail__stage-link"></a>
-            <img src="/assets/images/Scene2.jpg" alt="Scène 2 du festival" class="artist-detail__stage-image">
-            <p class="artist-detail__description">Chanteuse rap née en 2003, Théodora mêle rap, afro et bouyon avec des
-                textes audacieux sur l'identité noire
-                et
-                l'hyperféminité.​</p>
-
-            <h3 class="artist-detail__section-title">Succès viral</h3>
-            <p class="artist-detail__section-content">Explosée via Kongolese sous BBL (certifié or) et Bad Boy
-                Lovestory, Révélation Flammes 2025.</p>
-
-            <h3 class="artist-detail__section-title">Show électrisant</h3>
-            <p class="artist-detail__section-content">Énergie brute et dansante sur scène</p>
-        </div>
-    </section>
 
     <section class="gallery">
         <header class="gallery__header">
             <h2 class="gallery__title">Galerie</h2>
         </header>
-        <a href="/assets/images/Theodora1.jpg" class="gallery__item">
-            <img src="/assets/images/Theodora1.jpg" alt="Theodora assise par terre" class="gallery__image">
-        </a>
+        <div class="gallery__container">
+            <button class="gallery__button gallery__button--prev" type="button" aria-label="Image précédente"
+                aria-description="Afficher la photo précédente de Théodora">❮</button>
+            <div class="gallery__carousel" role="region" aria-label="Galerie de photos de Théodora">
+                <a href="/assets/images/Theodora1.jpg" class="gallery__item">
+                    <img src="/assets/images/Theodora1.jpg" alt="Theodora assise par terre" class="gallery__image">
+                </a>
 
-        <a href="/assets/images/Theodora2.jpg" class="gallery__item">
-            <img src="/assets/images/Theodora2.jpg" alt="Theodora de face" class="gallery__image">
-        </a>
+                <a href="/assets/images/Theodora2.jpg" class="gallery__item">
+                    <img src="/assets/images/Theodora2.jpg" alt="Theodora de face" class="gallery__image">
+                </a>
 
-        <a href="/assets/images/Theodora3.jpg" class="gallery__item">
-            <img src="/assets/images/Theodora3.jpg" alt="Theodora en performance" class="gallery__image">
-        </a>
+                <a href="/assets/images/Theodora3.jpg" class="gallery__item">
+                    <img src="/assets/images/Theodora3.jpg" alt="Theodora en performance" class="gallery__image">
+                </a>
 
-        <a href="/assets/images/Theodora4.jpg" class="gallery__item">
-            <img src="/assets/images/Theodora4.jpg" alt="Theodora en shooting photo" class="gallery__image">
-        </a>
+                <a href="/assets/images/Theodora4.jpg" class="gallery__item">
+                    <img src="/assets/images/Theodora4.jpg" alt="Theodora en shooting photo" class="gallery__image">
+                </a>
 
-        <a href="/assets/images/Theodora5.jpg" class="gallery__item">
-            <img src="/assets/images/Theodora5.jpg" alt="Theodora en performance" class="gallery__image">
-        </a>
+                <a href="/assets/images/Theodora5.jpg" class="gallery__item">
+                    <img src="/assets/images/Theodora5.jpg" alt="Theodora en performance" class="gallery__image">
+                </a>
 
-        <a href="/assets/images/Theodora6.jpg" class="gallery__item">
-            <img src="/assets/images/Theodora6.jpg" alt="Theodora en performance" class="gallery__image">
-        </a>
+                <a href="/assets/images/Theodora6.jpg" class="gallery__item">
+                    <img src="/assets/images/Theodora6.jpg" alt="Theodora en performance" class="gallery__image">
+                </a>
+            </div>
+            <button class="gallery__button gallery__button--next" type="button" aria-label="Image suivante"
+                aria-description="Afficher la photo suivante de Théodora">❯</button>
+        </div>
     </section>
 
     <footer>
