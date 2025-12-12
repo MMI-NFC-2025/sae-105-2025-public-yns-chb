@@ -11,7 +11,7 @@
     justify-content: space-between;
     background-color: var(--vert);
     z-index: 15;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
 .header__link {
@@ -24,13 +24,13 @@
 }
 
 .header__logo {
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     object-fit: contain;
 }
 
 .header__link img:not(.header__logo) {
-    height: 40px;
+    height: 2.5rem;
     width: auto;
     object-fit: contain;
 }
@@ -42,8 +42,8 @@
 /* Menu Button */
 .menu-btn {
     position: relative;
-    width: 35px;
-    height: 30px;
+    width: 2.1875rem;
+    height: 1.875rem;
     display: flex;
     justify-content: center;
     align-items: center;

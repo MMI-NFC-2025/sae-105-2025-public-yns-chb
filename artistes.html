@@ -1,7 +1,9 @@
 <!DOCTYPE html>
+<!-- Page Artistes: liste des artistes avec cartes -->
 <html lang="fr">
 
 <head>
+    <!-- Métadonnées et ressources globales -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artistes</title>
@@ -24,6 +26,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
+    <!-- Feuilles de style et script -->
     <link rel="stylesheet" href="/src/css/style.css" />
     <script type="module" src="/src/js/script.js"></script>
 
@@ -31,6 +34,7 @@
 </head>
 
 <body>
+    <!-- En-tête du site avec logo et menu -->
     <header class="header">
         <a href="/" class="header__link">
             <img src="assets/icons/Logo.svg" alt="Logo Savou Fest" class="header__logo">
@@ -41,6 +45,7 @@
         <button class="menu-btn" aria-label="Menu de navigation" aria-expanded="false">
             <img src="/assets/icons/Menu.svg" alt="Menu">
         </button>
+        <!-- Menu principal -->
         <nav class="menu" hidden>
 
             <ul class="menu__list">
@@ -55,15 +60,19 @@
         </nav>
     </header>
 
+    <!-- Contenu principal de la page -->
     <main>
+        <!-- Fil d'Ariane -->
         <nav aria-label="Fil d'Ariane" class="breadcrumb">
             <ul>
                 <li class="breadcrumb__item"><a href="/" class="breadcrumb__link">Accueil</a></li>
                 <li class="breadcrumb__item"><a href="/artistes.html" class="breadcrumb__link">Artistes</a></li>
             </ul>
         </nav>
+        <!-- Titre de la page -->
         <h1>Artistes</h1>
 
+        <!-- Carte artiste: Théodora -->
         <section class="artist-card artist-card--theodora">
             <div class="artist-card__content">
                 <a href="/theodora.html" class="artist-card__image-link">
@@ -76,6 +85,7 @@
             </div>
         </section>
 
+        <!-- Carte artiste: Drake -->
         <section class="artist-card artist-card--drake">
             <div class="artist-card__content">
                 <a href="/Drake.html" class="artist-card__image-link">
@@ -88,6 +98,7 @@
             </div>
         </section>
 
+        <!-- Carte artiste: Remy Bond -->
         <section class="artist-card artist-card--remybond">
             <div class="artist-card__content">
                 <a href="/RemyBond.html" class="artist-card__image-link">
@@ -102,6 +113,7 @@
             </div>
         </section>
 
+        <!-- Carte artiste: Will.i.am -->
         <section class="artist-card artist-card--william">
             <div class="artist-card__content">
                 <a href="/William.html" class="artist-card__image-link">
@@ -116,12 +128,14 @@
         </section>
     </main>
 
+    <!-- Pied de page avec navigation secondaire et partenaires -->
     <footer>
         <div class="footer__logo-section">
             <img src="/assets/icons/Logo.svg" alt="Logo Savou Fest" class="footer__logo">
             <h3 class="footer__logo-text">Savou Fest</h3>
         </div>
 
+        <!-- Navigation du pied de page -->
         <nav class="footer__section">
             <h3 class="footer__title">Navigation</h3>
             <ul class="footer__nav-list">
@@ -135,6 +149,7 @@
             </ul>
         </nav>
 
+        <!-- Logos des partenaires -->
         <section class="footer__section">
             <h3 class="footer__title">Nos partenaires</h3>
             <div class="footer__partners">
@@ -150,6 +165,7 @@
             </div>
         </section>
 
+        <!-- Liens vers les réseaux sociaux -->
         <section class="footer__section">
             <h3 class="footer__title">Réseaux sociaux</h3>
             <ul class="footer__social-list">

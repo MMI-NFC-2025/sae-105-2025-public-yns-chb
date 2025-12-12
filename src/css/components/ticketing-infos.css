@@ -13,22 +13,22 @@
     color: var(--bleu);
     margin: 0;
     font-family: var(--roboto);
-    margin-top: 40px;
-    margin-left: 20px;
-    margin-bottom: 20px;
+    margin-top: 2.5rem;
+    margin-left: 1.25rem;
+    margin-bottom: 1.25rem;
 }
 
 .tickets__content {
     display: grid;
-    grid-template-columns: repeat(2, minmax(220px, 1fr));
-    gap: 40px;
-    margin-left: 20px;
+    grid-template-columns: repeat(2, minmax(13.75rem, 1fr));
+    gap: 2.5rem;
+    margin-left: 1.25rem;
 }
 
 .tickets__option {
     background-color: var(--vert);
     color: var(--blanc);
-    border-radius: 12px;
+    border-radius: 0.75rem;
     padding: var(--texte-3);
     width: 95%;
     text-align: center;
@@ -62,22 +62,22 @@
     color: var(--bleu);
     margin: 0;
     font-family: var(--roboto);
-    margin-top: 50px;
-    margin-left: 20px;
-    margin-bottom: 20px;
+    margin-top: 3.125rem;
+    margin-left: 1.25rem;
+    margin-bottom: 1.25rem;
 }
 
 .reduced-rates__content {
     display: grid;
-    grid-template-columns: repeat(2, minmax(220px, 1fr));
-    gap: 40px;
-    margin-left: 20px;
+    grid-template-columns: repeat(2, minmax(13.75rem, 1fr));
+    gap: 2.5rem;
+    margin-left: 1.25rem;
 }
 
 .reduced-rates__option {
     background-color: var(--vert);
     color: var(--blanc);
-    border-radius: 12px;
+    border-radius: 0.75rem;
     padding: var(--texte-3);
     width: 95%;
     text-align: center;
@@ -111,22 +111,22 @@
     color: var(--bleu);
     margin: 0;
     font-family: var(--roboto);
-    margin-top: 50px;
-    margin-left: 20px;
-    margin-bottom: 20px;
+    margin-top: 3.125rem;
+    margin-left: 1.25rem;
+    margin-bottom: 1.25rem;
 }
 
 .transport-info__content {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    margin-left: 20px;
+    gap: 1.875rem;
+    margin-left: 1.25rem;
 }
 
 .transport-info__option {
     background-color: var(--vert);
     color: var(--blanc);
-    border-radius: 12px;
+    border-radius: 0.75rem;
     padding: var(--texte-3);
     width: 95%;
 }
@@ -143,7 +143,7 @@
     line-height: 1.5;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
 
     .tickets__content,
     .reduced-rates__content {

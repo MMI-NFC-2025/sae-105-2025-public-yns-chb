@@ -1,6 +1,6 @@
 /* Contact Page */
 .contact-form {
-    margin-right: 20px;
+    margin-right: 1.25rem;
     background-color: var(--blanc);
     text-align: left;
 }
@@ -10,15 +10,15 @@
     color: var(--bleu);
     margin: 0 0 var(--texte-2) 0;
     font-family: var(--roboto);
-    margin-top: 40px;
-    margin-left: 20px;
-    margin-bottom: 30px;
+    margin-top: 2.5rem;
+    margin-left: 1.25rem;
+    margin-bottom: 1.875rem;
 }
 
 .contact-form__content {
-    margin-left: 20px;
-    max-width: 400px;
-    border: 2px solid var(--noir);
+    margin-left: 1.25rem;
+    max-width: 25rem;
+    border: 0.125rem solid var(--noir);
     padding: var(--texte-2);
     border-radius: var(--texte-4);
 }
@@ -42,8 +42,8 @@
     display: inline-block;
     background-color: var(--vert);
     color: var(--blanc);
-    padding: 8px var(--texte-1);
-    border-radius: 4px;
+    padding: 0.5rem var(--texte-1);
+    border-radius: 0.25rem;
     font-size: var(--texte-2);
     font-weight: 400;
     margin-top: var(--texte-2);
@@ -57,12 +57,12 @@
 .contact-form select,
 .contact-form textarea {
     width: 100%;
-    padding: 10px 12px;
-    border: 2px solid #999;
-    border-radius: 8px;
+    padding: 0.625rem 0.75rem;
+    border: 0.125rem solid #999;
+    border-radius: 0.5rem;
     font-size: var(--texte-2);
     font-family: var(--roboto);
-    margin: 4px 0 var(--texte-4) 0;
+    margin: 0.25rem 0 var(--texte-4) 0;
     box-sizing: border-box;
 }
 
@@ -79,7 +79,7 @@
 }
 
 .contact-form textarea {
-    height: 140px;
+    height: 8.75rem;
     resize: none;
 }
 
@@ -94,13 +94,13 @@
     color: var(--bleu);
     margin: 0 0 var(--texte-2) 0;
     font-family: var(--roboto);
-    margin-top: 40px;
-    margin-left: 20px;
-    margin-bottom: 20px;
+    margin-top: 2.5rem;
+    margin-left: 1.25rem;
+    margin-bottom: 1.25rem;
 }
 
 .contact-info__content {
-    margin-left: 20px;
+    margin-left: 1.25rem;
     display: flex;
     flex-direction: column;
     gap: var(--texte-3);
@@ -128,22 +128,22 @@
     color: var(--bleu);
     margin: 0 0 var(--texte-2) 0;
     font-family: var(--roboto);
-    margin-top: 40px;
-    margin-left: 20px;
-    margin-bottom: 20px;
+    margin-top: 2.5rem;
+    margin-left: 1.25rem;
+    margin-bottom: 1.25rem;
 }
 
 .social-links__content {
-    margin-left: 20px;
+    margin-left: 1.25rem;
     display: flex;
     gap: var(--texte-1);
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 }
 
 .social-links__icon {
-    width: 48px;
-    height: 48px;
+    width: 3rem;
+    height: 3rem;
     transition: transform 0.3s ease;
 }
 
@@ -151,13 +151,13 @@
     transform: scale(1.1);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
     .contact-form__content {
         max-width: 100%;
     }
 
     .social-links__icon {
-        width: 40px;
-        height: 40px;
+        width: 2.5rem;
+        height: 2.5rem;
     }
 }

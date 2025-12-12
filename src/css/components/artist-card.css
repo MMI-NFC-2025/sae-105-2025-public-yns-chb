@@ -9,12 +9,12 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    max-width: 280px;
+    max-width: 17.5rem;
 }
 
 .artist-card__image {
     width: 90%;
-    height: 320px;
+    height: 20rem;
     object-fit: cover;
     border-radius: var(--texte-4);
     display: block;
@@ -27,8 +27,8 @@
     padding: var(--texte-3) var(--texte-3);
     border-radius: 0 0 var(--texte-4) var(--texte-4);
     width: 90%;
-    margin-left: 20px;
-    margin-top: -8px;
+    margin-left: 1.25rem;
+    margin-top: -0.5rem;
 }
 
 .artist-card__name {
@@ -50,21 +50,21 @@
 .artist-card__schedule {
     font-size: var(--texte-2);
     color: var(--blanc);
-    margin: -8px var(--texte-3) 0 var(--texte-3);
+    margin: -0.5rem var(--texte-3) 0 var(--texte-3);
     padding-bottom: var(--texte-3);
     background-color: var(--vert);
     border-radius: 0 0 var(--texte-4) var(--texte-4);
     width: 90%;
-    margin-left: 20px;
-    margin-bottom: 40px;
+    margin-left: 1.25rem;
+    margin-bottom: 2.5rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
     .artist-card__content {
         max-width: 100%;
     }
 
     .artist-card__image {
-        height: 280px;
+        height: 17.5rem;
     }
 }

@@ -21,7 +21,7 @@
 }
 
 .ticketing h2 {
-    margin-left: 20px;
+    margin-left: 1.25rem;
 }
 
 .ticketing__list {
@@ -29,8 +29,8 @@
     padding: 0;
     margin: 0 0 var(--h3) 0;
     text-align: left;
-    max-width: 420px;
-    margin-left: 20px;
+    max-width: 26.25rem;
+    margin-left: 1.25rem;
 }
 
 .ticketing__item {
@@ -60,7 +60,7 @@
     padding: var(--h3) var(--h3);
     background-color: var(--blanc);
     text-align: center;
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
 .ticketing-cta__button {
@@ -80,7 +80,7 @@
     opacity: 0.9;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
 
     .ticketing,
     .ticketing-cta {

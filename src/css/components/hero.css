@@ -2,7 +2,7 @@
 .hero {
     width: 100vw;
     margin-left: calc(-50vw + 50%);
-    height: 400px;
+    height: 25rem;
     background-image: url('/assets/images/Hero.jpg');
     background-size: cover;
     background-position: center;
@@ -22,7 +22,7 @@
 
 /* Hero override for Scène principale */
 .hero--main-stage {
-    height: 220px;
+    height: 13.75rem;
     background-image: url('/assets/images/Scene1.jpg');
     background-size: cover;
     background-position: center;
@@ -33,7 +33,7 @@
 
 /* Hero override for Scène secondaire */
 .hero--secondary-stage {
-    height: 220px;
+    height: 13.75rem;
     background-image: url('/assets/images/Scene2.jpg');
     background-size: cover;
     background-position: center;
@@ -44,7 +44,7 @@
 
 /* Hero override for Théodora */
 .hero--theodora {
-    height: 300px;
+    height: 18.75rem;
     background-image: url('/assets/images/Theodora.jpg');
     background-size: cover;
     background-position: center;
@@ -55,7 +55,7 @@
 
 /* Hero override for Remy Bond */
 .hero--remybond {
-    height: 300px;
+    height: 18.75rem;
     background-image: url('/assets/images/RemyBond.jpg');
     background-size: cover;
     background-position: center;
@@ -65,7 +65,7 @@
 
 /* Hero override for Drake */
 .hero--drake {
-    height: 300px;
+    height: 18.75rem;
     background-image: url('/assets/images/Drake.jpg');
     background-size: cover;
     background-position: center;
@@ -75,7 +75,7 @@
 
 /* Hero override for Will.i.am */
 .hero--william {
-    height: 300px;
+    height: 18.75rem;
     background-image: url('/assets/images/Will.i.am.jpg');
     background-size: cover;
     background-position: center;
@@ -85,28 +85,28 @@
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
     .hero {
-        height: 250px;
+        height: 15.625rem;
     }
 
     .hero__title {
         font-size: 2.5rem;
         color: var(--blanc);
         margin: 0;
-        margin-left: 20px;
+        margin-left: 1.25rem;
     }
 
     .hero__date {
         font-size: 1.2rem;
-        margin-left: 20px;
-        margin-top: 5px;
-        margin-bottom: 0px;
+        margin-left: 1.25rem;
+        margin-top: 0.3125rem;
+        margin-bottom: 0rem;
     }
 
     .hero__location {
         font-size: 1rem;
-        margin-left: 20px;
-        margin-top: 0px;
+        margin-left: 1.25rem;
+        margin-top: 0rem;
     }
 }

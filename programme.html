@@ -28,6 +28,7 @@
 </head>
 
 <body>
+    <!-- En-tête: logo + menu principal -->
     <header class="header">
         <a href="/" class="header__link">
             <img src="assets/icons/Logo.svg" alt="Logo Savou Fest" class="header__logo">
@@ -52,63 +53,102 @@
         </nav>
     </header>
 
+    <!-- Contenu principal: titre et sections artistes + téléchargement -->
     <main>
+        <!-- Titre de la page -->
         <h1>Programme</h1>
 
-        <section class="artist artist--theodora">
-            <header class="artist__header">
-                <h2 class="artist__title">Théodora</h2>
-            </header>
-            <div class="artist__content">
-                <a href="/assets/images/Theodora.jpg" class="artist__image-link">
-                    <img src="/assets/images/Theodora.jpg" alt="Theodora de face" class="artist__image">
-                </a>
-                <p class="artist__genre">Rap/Bouyon</p>
-                <p class="artist__schedule">Rendez-vous le 12 juin 2026 à 16h sur la scène 2</p>
-            </div>
+        <!-- Filtres du programme -->
+        <section class="programme__filters" aria-label="Filtres du programme">
+            <label for="filter-genre">Genre</label>
+            <select id="filter-genre">
+                <option value="">Tous</option>
+                <option value="rap">Rap</option>
+                <option value="alternatif">Alternatif</option>
+                <option value="pop">Pop</option>
+            </select>
+
+            <label for="filter-scene">Scène</label>
+            <select id="filter-scene">
+                <option value="">Toutes</option>
+                <option value="scene-1">Scène 1</option>
+                <option value="scene-2">Scène 2</option>
+            </select>
+
+            <label for="filter-time">Horaire</label>
+            <select id="filter-time">
+                <option value="">Toutes</option>
+                <option value="morning">Matin (6h-12h)</option>
+                <option value="afternoon">Après-midi (12h-18h)</option>
+                <option value="evening">Soir (18h-24h)</option>
+            </select>
         </section>
 
-        <section class="artist artist--drake">
-            <header class="artist__header">
-                <h2 class="artist__title">Drake</h2>
-            </header>
-            <div class="artist__content">
-                <a href="/assets/images/Drake.jpg" class="artist__image-link">
-                    <img src="/assets/images/Drake.jpg" alt="Drake en noir et blanc" class="artist__image">
-                </a>
-                <p class="artist__genre">Rap/R&B</p>
-                <p class="artist__schedule">Rendez-vous le 12 juin 2026 à 19H sur la scène 1</p>
-            </div>
-        </section>
+        <div class="programme__list">
+            <!-- Section artiste: Théodora -->
+            <section class="artist artist--theodora programme__item" data-genre="rap" data-scene="scene-2"
+                data-time="16:00">
+                <header class="artist__header">
+                    <h2 class="artist__title">Théodora</h2>
+                </header>
+                <div class="artist__content">
+                    <a href="/assets/images/Theodora.jpg" class="artist__image-link">
+                        <img src="/assets/images/Theodora.jpg" alt="Theodora de face" class="artist__image">
+                    </a>
+                    <p class="artist__genre">Rap/Bouyon</p>
+                    <p class="artist__schedule">Rendez-vous le 12 juin 2026 à 16h sur la scène 2</p>
+                </div>
+            </section>
 
-        <section class="artist artist--remybond">
-            <header class="artist__header">
-                <h2 class="artist__title">Remy Bond</h2>
-            </header>
-            <div class="artist__content">
-                <a href="/assets/images/RemyBond.jpg" class="artist__image-link">
-                    <img src="/assets/images/RemyBond.jpg" alt="Rémy Bond en performance" loading="lazy"
-                        class="artist__image">
-                </a>
-                <p class="artist__genre">Alternatif</p>
-                <p class="artist__schedule">Rendez-vous le 13 juin 2026 à 19H sur la scène 2</p>
-            </div>
-        </section>
+            <!-- Section artiste: Drake -->
+            <section class="artist artist--drake programme__item" data-genre="rap" data-scene="scene-1"
+                data-time="19:00">
+                <header class="artist__header">
+                    <h2 class="artist__title">Drake</h2>
+                </header>
+                <div class="artist__content">
+                    <a href="/assets/images/Drake.jpg" class="artist__image-link">
+                        <img src="/assets/images/Drake.jpg" alt="Drake en noir et blanc" class="artist__image">
+                    </a>
+                    <p class="artist__genre">Rap/R&B</p>
+                    <p class="artist__schedule">Rendez-vous le 12 juin 2026 à 19H sur la scène 1</p>
+                </div>
+            </section>
 
-        <section class="artist artist--william">
-            <header class="artist__header">
-                <h2 class="artist__title">Will.i.am</h2>
-            </header>
-            <div class="artist__content">
-                <a href="/assets/images/Will.i.am.jpg" class="artist__image-link">
-                    <img src="/assets/images/Will.i.am.jpg" alt="Will.i.am en performance" loading="lazy"
-                        class="artist__image">
-                </a>
-                <p class="artist__genre">Pop/Electro</p>
-                <p class="artist__schedule">Rendez-vous le 13 juin 2026 à 21H sur la scène 1</p>
-            </div>
-        </section>
+            <!-- Section artiste: Remy Bond -->
+            <section class="artist artist--remybond programme__item" data-genre="alternatif" data-scene="scene-2"
+                data-time="19:00">
+                <header class="artist__header">
+                    <h2 class="artist__title">Remy Bond</h2>
+                </header>
+                <div class="artist__content">
+                    <a href="/assets/images/RemyBond.jpg" class="artist__image-link">
+                        <img src="/assets/images/RemyBond.jpg" alt="Rémy Bond en performance" loading="lazy"
+                            class="artist__image">
+                    </a>
+                    <p class="artist__genre">Alternatif</p>
+                    <p class="artist__schedule">Rendez-vous le 13 juin 2026 à 19H sur la scène 2</p>
+                </div>
+            </section>
 
+            <!-- Section artiste: Will.i.am -->
+            <section class="artist artist--william programme__item" data-genre="pop" data-scene="scene-1"
+                data-time="21:00">
+                <header class="artist__header">
+                    <h2 class="artist__title">Will.i.am</h2>
+                </header>
+                <div class="artist__content">
+                    <a href="/assets/images/Will.i.am.jpg" class="artist__image-link">
+                        <img src="/assets/images/Will.i.am.jpg" alt="Will.i.am en performance" loading="lazy"
+                            class="artist__image">
+                    </a>
+                    <p class="artist__genre">Pop/Electro</p>
+                    <p class="artist__schedule">Rendez-vous le 13 juin 2026 à 21H sur la scène 1</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Téléchargement du programme -->
         <section class="download">
             <header class="download__header">
                 <h2 class="download__title">Télécharger le programme</h2>
@@ -119,6 +159,7 @@
         </section>
     </main>
 
+    <!-- Pied de page -->
     <footer>
         <div class="footer__logo-section">
             <img src="/assets/icons/Logo.svg" alt="Logo Savou Fest" class="footer__logo">

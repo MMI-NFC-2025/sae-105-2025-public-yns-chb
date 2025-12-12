@@ -1,32 +1,73 @@
-/* Programme Section */
+/* Section Programme : styles généraux */
 .programme {
-    padding: var(--h3) 20px;
-    margin-top: 30px;
+    padding: var(--h3) 1.25rem;
+    margin-top: 1.875rem;
     background-color: var(--blanc);
-    margin-left: 20px;
+    margin-left: 1.25rem;
+    display: flex;
+    flex-direction: column;
 }
 
+/* En-tête de la section Programme */
 .programme__header {
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 }
 
+/* Titre principal de la page Programme */
 .programme__title {
     font-size: var(--h2);
     color: var(--vert);
     margin: 0;
 }
 
+/* Grille des cartes programme (conteneur principal) */
 .programme__container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
     gap: var(--h3);
+    order: 1; /* Affiché avant les filtres */
 }
 
+/* Filtres du programme */
+.programme__filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 1rem;
+    margin-left: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 0;
+    order: 2;
+}
+
+.programme__filters label {
+    font-size: var(--texte-2);
+    color: var(--noir);
+    margin-right: 0.5rem;
+}
+
+.programme__filters select {
+    font-size: var(--texte-2);
+    padding: 0.5rem 0.75rem;
+    border: 0.0625rem solid var(--neutral-200);
+    border-radius: 0.375rem;
+    background-color: var(--blanc);
+}
+
+/* When using .programme__list instead of .programme__container */
+.programme__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+    gap: var(--h3);
+    order: 1;
+}
+
+/* Carte individuelle d'un artiste dans le programme */
 .programme__item {
     text-align: center;
 }
 
-/* Disable clicks on programme images */
+/* Désactiver les clics sur les images du programme */
 .programme__image-link {
     pointer-events: none;
     cursor: default;
@@ -34,13 +75,14 @@
 
 .programme__image {
     width: 95%;
-    height: 240px;
+    height: 15rem;
     object-fit: cover;
     background-color: #fff;
     border-radius: var(--texte-4);
     margin-bottom: 0;
 }
 
+/* Nom de l'artiste */
 .programme__artist {
     font-size: var(--h3);
     color: var(--noir);
@@ -50,16 +92,18 @@
     text-align: left;
 }
 
+/* Date / horaire de passage */
 .programme__date {
     font-size: var(--text-base);
     color: var(--noir);
     margin-left: 0;
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
     text-align: left;
 }
 
-@media (max-width: 768px) {
+/* Réglages responsives pour écrans étroits */
+@media (max-width: 48rem) {
 
     .programme,
     .programme__container {
@@ -69,6 +113,18 @@
     }
 
     .programme__image {
-        height: 200px;
+        height: 12.5rem;
+    }
+
+    /* Filtres empilés sur mobile */
+    .programme__filters {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.75rem;
+        margin-left: 1.25rem;
+    }
+
+    .programme__filters label {
+        margin-right: 0;
     }
 }
